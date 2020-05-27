@@ -11,7 +11,8 @@ body {
   margin: 0px;
   padding-top: 70px;
   color: #333;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  width: 100%; }
 
 .overflowHidden {
   overflow: hidden; }
@@ -85,101 +86,100 @@ nav {
       font-weight: 500;
       text-decoration: none; }
 
-body {
-  width: 100%; }
-  body .heroSection {
-    height: calc(100vh - 110px);
-    padding: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    body .heroSection_content {
-      display: block;
-      margin: auto;
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 200px 1fr;
-      grid-template-columns: 200px 1fr; }
-    body .heroSection_imageContainer_img {
-      width: 100%;
-      max-width: 200px;
-      border-radius: 100%;
-      display: block;
-      margin: auto; }
-    body .heroSection_textContainer {
-      display: block;
-      margin: auto;
-      margin-left: 30px; }
-      body .heroSection_textContainer_h1 {
-        margin: 0px;
-        font-size: 3em;
-        line-height: 2em;
-        font-family: "Merriweather", "serif"; }
-      body .heroSection_textContainer_h2 {
-        margin: 0px;
-        font-size: 2em;
-        line-height: 2em;
-        font-weight: 500; }
-    body .heroSection .buttonContainer_button {
-      margin: auto; }
-  body .section {
-    height: calc(100vh - 110px);
-    padding: 20px; }
-    body .section_header {
-      display: block;
-      padding-bottom: 20px;
-      text-align: center; }
-      body .section_header_h2 {
-        margin: 0px;
-        font-size: 1.8em; }
-    body .section_body_p {
+.heroSection {
+  height: calc(100vh - 110px);
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .heroSection_content {
+    display: block;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px 1fr;
+    grid-template-columns: 200px 1fr; }
+  .heroSection_imageContainer_img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 100%;
+    display: block;
+    margin: auto; }
+  .heroSection_textContainer {
+    display: block;
+    margin: auto;
+    margin-left: 30px; }
+    .heroSection_textContainer_h1 {
       margin: 0px;
-      font-size: 1.2em;
-      line-height: 1.9em; }
-    body .section_body_cards {
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 30px;
-      width: 90%;
-      max-width: 1024px;
-      margin: 20px auto; }
-      body .section_body_cards .card {
-        background-color: #fff;
-        box-shadow: 0px 2px 8px #e3e3e3;
-        border-radius: 10px;
-        padding: 12px 15px; }
-        body .section_body_cards .card_header {
-          display: -webkit-inline-box;
-          display: -ms-inline-flexbox;
-          display: inline-flex;
-          align-items: center;
-          padding-bottom: 12px;
-          border-bottom: 1px solid #eaeaea;
-          width: 100%; }
-          body .section_body_cards .card_header_iconContainer {
-            height: 35px;
-            width: 35px;
-            border-radius: 20px;
-            background-color: #f4f4f4;
-            margin-right: 10px; }
-            body .section_body_cards .card_header_iconContainer_icon {
-              font-size: 1.3em;
-              color: #333;
-              margin-top: 1px; }
-          body .section_body_cards .card_header_h3 {
-            margin: 0px;
-            font-size: 1.3em; }
-        body .section_body_cards .card_body {
-          padding-top: 12px; }
-          body .section_body_cards .card_body_p {
-            margin: 0px;
-            font-size: 1.2em;
-            line-height: 1.9em;
-            color: #333; }
+      font-size: 3em;
+      line-height: 2em;
+      font-family: "Merriweather", "serif"; }
+    .heroSection_textContainer_h2 {
+      margin: 0px;
+      font-size: 2em;
+      line-height: 2em;
+      font-weight: 500; }
+  .heroSection .buttonContainer_button {
+    margin: auto; }
+
+.section {
+  height: calc(100vh - 110px);
+  padding: 20px; }
+  .section_header {
+    display: block;
+    padding-bottom: 20px;
+    text-align: center; }
+    .section_header_h2 {
+      margin: 0px;
+      font-size: 1.8em; }
+  .section_body_p {
+    margin: 0px;
+    font-size: 1.2em;
+    line-height: 1.9em; }
+  .section_body_cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    width: 90%;
+    max-width: 1024px;
+    margin: 20px auto; }
+    .section_body_cards .card {
+      background-color: #fff;
+      box-shadow: 0px 2px 8px #e3e3e3;
+      border-radius: 10px;
+      padding: 12px 15px; }
+      .section_body_cards .card_header {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        align-items: center;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #eaeaea;
+        width: 100%; }
+        .section_body_cards .card_header_iconContainer {
+          height: 35px;
+          width: 35px;
+          border-radius: 20px;
+          background-color: #f4f4f4;
+          margin-right: 10px; }
+          .section_body_cards .card_header_iconContainer_icon {
+            font-size: 1.3em;
+            color: #333;
+            margin-top: 1px; }
+        .section_body_cards .card_header_h3 {
+          margin: 0px;
+          font-size: 1.3em; }
+      .section_body_cards .card_body {
+        padding-top: 12px; }
+        .section_body_cards .card_body_p {
+          margin: 0px;
+          font-size: 1.2em;
+          line-height: 1.9em;
+          color: #333; }
 
 .buttonContainer--grid {
   display: -ms-grid;
@@ -278,3 +278,21 @@ body {
     margin: auto;
     margin-top: 20px;
     font-size: 1.1em; }
+
+@media only screen and (max-width: 500px) {
+  .navContainer .logoContainer {
+    margin-left: 10px; }
+    .navContainer .logoContainer_text {
+      display: none; }
+  .navContainer .navItems {
+    margin-right: 15px; }
+
+  .heroSection_content {
+    display: block; }
+  .heroSection_imageContainer {
+    margin-bottom: 15px; }
+    .heroSection_imageContainer_img {
+      max-width: 300px; }
+  .heroSection_textContainer {
+    margin: 0px;
+    text-align: center; } }

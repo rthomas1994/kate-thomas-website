@@ -46,6 +46,7 @@ body {
 	padding-top: 70px;
 	color: #333;
 	background-color: #f4f4f4;
+	width: 100%;
 }
 
 .overflowHidden {
@@ -147,146 +148,141 @@ nav {
 
 }
 
-body {
-	width: 100%;
+.heroSection {
+	height: calc(100vh - 110px);
+	padding: 20px;
+	@include flex;
+	align-items: center;
+	justify-content: center;
 
-	.heroSection {
-		height: calc(100vh - 110px);
-		padding: 20px;
-		@include flex;
-		align-items: center;
-		justify-content: center;
+	&_content {
+		display: block;
+		margin: auto;
+		@include grid;
+		-ms-grid-columns: 200px 1fr;
+		grid-template-columns: 200px 1fr;
+	}
 
-		&_content {
+	&_imageContainer {
+
+		&_img {
+			width: 100%;
+			max-width: 200px;
+			border-radius: 100%;
 			display: block;
 			margin: auto;
-			@include grid;
-			-ms-grid-columns: 200px 1fr;
-			grid-template-columns: 200px 1fr;
-		}
-
-		&_imageContainer {
-
-			&_img {
-				width: 100%;
-				max-width: 200px;
-				border-radius: 100%;
-				display: block;
-				margin: auto;
-			}
-
-		}
-
-		&_textContainer {
-			display: block;
-			margin: auto;
-			margin-left: 30px;
-
-			&_h1 {
-				margin: 0px;
-				font-size: 3em;
-				line-height: 2em;
-				@include font-merriweather;
-			}
-
-			&_h2 {
-				margin: 0px;
-				font-size: 2em;
-				line-height: 2em;
-				font-weight: 500;
-			}
-
-		}
-
-		.buttonContainer {
-
-			&_button {
-				margin: auto;
-			}
-
 		}
 
 	}
 
-	.section {
-		height: calc(100vh - 110px);
-		padding: 20px;
+	&_textContainer {
+		display: block;
+		margin: auto;
+		margin-left: 30px;
 
-		&_header {
-			display: block;
-			padding-bottom: 20px;
-			text-align: center;
-
-			&_h2 {
-				margin: 0px;
-				font-size: 1.8em;
-			}
-
+		&_h1 {
+			margin: 0px;
+			font-size: 3em;
+			line-height: 2em;
+			@include font-merriweather;
 		}
 
-		&_body {
-			// padding-top: 20px;
+		&_h2 {
+			margin: 0px;
+			font-size: 2em;
+			line-height: 2em;
+			font-weight: 500;
+		}
 
-			&_p {
-				margin: 0px;
-				font-size: 1.2em;
-				line-height: 1.9em;
-			}
+	}
 
-			&_cards {
-				@include grid;
-				-ms-grid-columns: 1fr 1fr;
-				grid-template-columns: 1fr 1fr;
-				grid-gap: 30px;
-				width: 90%;
-				max-width: 1024px;
-				margin: 20px auto;
+	.buttonContainer {
 
-				.card {
-					background-color: #fff;
-					box-shadow: 0px 2px 8px #e3e3e3;
-					border-radius: 10px;
-					padding: 12px 15px;
+		&_button {
+			margin: auto;
+		}
 
-					&_header {
-						@include inlineFlex;
-						align-items: center;
-						padding-bottom: 12px;
-						border-bottom: 1px solid #eaeaea;
-						width: 100%;
+	}
 
-						&_iconContainer {
-						    height: 35px;
-						    width: 35px;
-						    border-radius: 20px;
-						    background-color: #f4f4f4;
-						    margin-right: 10px;
+}
 
-							&_icon {
-								font-size: 1.3em;
-								color: #333;
-								margin-top: 1px;
-							}
+.section {
+	height: calc(100vh - 110px);
+	padding: 20px;
 
-						}
+	&_header {
+		display: block;
+		padding-bottom: 20px;
+		text-align: center;
 
-						&_h3 {
-							margin: 0px;
+		&_h2 {
+			margin: 0px;
+			font-size: 1.8em;
+		}
+
+	}
+
+	&_body {
+		// padding-top: 20px;
+
+		&_p {
+			margin: 0px;
+			font-size: 1.2em;
+			line-height: 1.9em;
+		}
+
+		&_cards {
+			@include grid;
+			-ms-grid-columns: 1fr 1fr;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 30px;
+			width: 90%;
+			max-width: 1024px;
+			margin: 20px auto;
+
+			.card {
+				background-color: #fff;
+				box-shadow: 0px 2px 8px #e3e3e3;
+				border-radius: 10px;
+				padding: 12px 15px;
+
+				&_header {
+					@include inlineFlex;
+					align-items: center;
+					padding-bottom: 12px;
+					border-bottom: 1px solid #eaeaea;
+					width: 100%;
+
+					&_iconContainer {
+					    height: 35px;
+					    width: 35px;
+					    border-radius: 20px;
+					    background-color: #f4f4f4;
+					    margin-right: 10px;
+
+						&_icon {
 							font-size: 1.3em;
+							color: #333;
+							margin-top: 1px;
 						}
 
 					}
 
-					&_body {
-						padding-top: 12px;
+					&_h3 {
+						margin: 0px;
+						font-size: 1.3em;
+					}
 
-						&_p {
-							margin: 0px;
-							font-size: 1.2em;
-							line-height: 1.9em;
-							color: #333;
-						}
+				}
 
+				&_body {
+					padding-top: 12px;
+
+					&_p {
+						margin: 0px;
+						font-size: 1.2em;
+						line-height: 1.9em;
+						color: #333;
 					}
 
 				}
@@ -457,6 +453,51 @@ body {
 ////////////---Media Queries---//////////////
 /////////////////////////////////////////////
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 500px) {
+
+	.navContainer {
+
+		.logoContainer {
+			margin-left: 10px;
+
+			&_text {
+				display: none;
+			}
+
+		}
+
+		.navItems {
+			margin-right: 15px;
+		}
+
+	}
+
+	.heroSection {
+
+		&_content {
+			display: block;
+		}
+
+		&_imageContainer {
+			margin-bottom: 15px;
+
+			&_img {
+				max-width: 300px;
+			}
+
+		}
+
+		&_textContainer {
+			margin: 0px;
+			text-align: center;
+		}
+
+	}
 
 }
+
+
+
+
+
+
