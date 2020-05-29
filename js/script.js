@@ -14,11 +14,11 @@ $(document).ready(function() {
         }, 400)
 	});
 
-    $("#nav_resume").click(function() {
-        $("html, body").animate({
-            scrollTop: $("#resume").offset().top - scrollOffset
-        }, 400)
-    });
+    // $("#nav_resume").click(function() {
+    //     $("html, body").animate({
+    //         scrollTop: $("#resume").offset().top - scrollOffset
+    //     }, 400)
+    // });
 
 	$("#nav_contact").click(function() {
         $("html, body").animate({
