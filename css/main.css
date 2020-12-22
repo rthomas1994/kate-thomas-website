@@ -54,6 +54,9 @@ body {
   max-width: 1024px;
   margin: auto; }
 
+.pageContent {
+  padding-top: 100px; }
+
 .skipNav {
   position: absolute;
   left: -120px;
@@ -159,7 +162,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    padding: 100px 0px; }
     .sectionContainer .section--hero .section_content {
       width: 90%;
       display: -ms-grid;
@@ -182,10 +186,11 @@ body {
           margin: 0px 15px;
           width: 1px;
           height: 15px;
-          background-color: #333; }
+          background-color: #d0d0d0; }
         .sectionContainer .section--hero .section_content .tagLine_h2 {
           margin: 0px;
-          font-size: 1.2em; }
+          font-size: 1.2em;
+          font-weight: 600; }
       .sectionContainer .section--hero .section_content_imageContainer {
         display: -webkit-box;
         display: -ms-flexbox;

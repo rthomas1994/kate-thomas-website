@@ -145,6 +145,10 @@ body {
 	margin: auto;
 }
 
+.pageContent {
+	padding-top: 100px;
+}
+
 //////////////////////////////
 ///////////Layout/////////////
 //////////////////////////////
@@ -313,6 +317,7 @@ body {
 			@include flex;
 			align-items: center;
 			justify-content: center;
+			padding: 100px 0px;
 
 			.section_content {
 				width: 90%;
@@ -335,12 +340,13 @@ body {
 						margin: 0px 15px;
 						width: 1px;
 						height: 15px;
-						background-color: $colorBlack;
+						background-color: #d0d0d0;
 					}
 
 					&_h2 {
 						margin: 0px;
 						font-size: 1.2em;
+						font-weight: 600;
 					}
 
 				}
