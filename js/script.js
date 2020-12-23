@@ -2,17 +2,29 @@ var scrollOffset = 70;
 
 $(document).ready(function() {
 
-	$("#nav_home").click(function() {
-        $("html, body").animate({
-            scrollTop: 0
-        }, 400)
-	});
+    // Scroll to relevant section from nav bar
+    $(".navItem").click(function() {
 
-	$("#nav_work").click(function() {
+        // Get clicked item
+        var clickedNavItem = $(this).attr("id").replace("nav_", "");
+
         $("html, body").animate({
-            scrollTop: $("#work").offset().top - scrollOffset
-        }, 400)
-	});
+            scrollTop: $("#" + clickedNavItem).offset().top - scrollOffset
+        }, 400);
+
+    });
+
+	// $("#nav_home").click(function() {
+ //        $("html, body").animate({
+ //            scrollTop: 0
+ //        }, 400)
+	// });
+
+	// $("#nav_work").click(function() {
+ //        $("html, body").animate({
+ //            scrollTop: $("#work").offset().top - scrollOffset
+ //        }, 400)
+	// });
 
     // $("#nav_resume").click(function() {
     //     $("html, body").animate({
@@ -20,10 +32,10 @@ $(document).ready(function() {
     //     }, 400)
     // });
 
-	$("#nav_contact").click(function() {
-        $("html, body").animate({
-            scrollTop: $("#contact").offset().top - scrollOffset
-        }, 400)
-	});
+	// $("#nav_contact").click(function() {
+ //        $("html, body").animate({
+ //            scrollTop: $("#contact").offset().top - scrollOffset
+ //        }, 400)
+	// });
 
 });

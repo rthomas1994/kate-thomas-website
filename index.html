@@ -55,7 +55,7 @@
 
 	</head>
 
-	<body>
+	<body class="pageContent">
 
 		<a class="skipNav" href="#main_content" id="nav_main_content">
 			Skip Navigation
@@ -107,7 +107,7 @@
 
 		</nav>
 
-		<main class="pageContent" id="main_content">
+		<main id="main_content">
 
 			<div class="sectionContainer" id="about">
 
@@ -115,10 +115,10 @@
 				
 					<div class="section_content maxWidth">
 
-						<div class="heroImagesContainer heroImagesContainer--desktop">
+						<div class="heroImagesContainer heroImagesContainer--desktop row1col1">
 
-							<div class="gradientDotContainer">
-								<div class="gradientDotContainer_column">
+							<div class="gradientDotContainer row1col1 ie-margin-top-30">
+								<div class="gradientDotContainer_column row1col1">
 									<div class="gradientDot gradientDot--1"></div>
 									<div class="gradientDot gradientDot--1"></div>
 									<div class="gradientDot gradientDot--2"></div>
@@ -132,8 +132,8 @@
 									<div class="gradientDot gradientDot--6"></div>
 									<div class="gradientDot gradientDot--6"></div>
 								</div>
-								<div></div> <!-- Empty column for IE -->
-								<div class="gradientDotContainer_column gradientDotContainer_column--marginTop">
+								<div class="row1col2"></div> <!-- Empty column for IE -->
+								<div class="gradientDotContainer_column gradientDotContainer_column--marginTop row1col3">
 									<div class="gradientDot gradientDot--1"></div>
 									<div class="gradientDot gradientDot--1"></div>
 									<div class="gradientDot gradientDot--2"></div>
@@ -149,20 +149,22 @@
 								</div>
 							</div>
 
-							<div class="section_content_imageContainer row1col1">
+							<div class="section_content_imageContainer row1col2">
 								<!-- <img class="section_content_imageContainer_img" src="media/kate-thomas-square-compressed.png" /> -->
 								<img class="section_content_imageContainer_img" src="/Users/Rhys/Pictures/kate-hero-comp.png" />
 							</div>
 
 						</div>
 
-						<div class="section_content_textContainer row1col2">
+						<div class="textContainer row1col2">
 
 							<div class="sectionHeading">
 								<h1 class="sectionHeading_h1 boldText">
 									Kate Thomas
 								</h1>
 							</div>
+
+							<div class="gradientDivider"></div>
 
 							<div class="tagLine">
 								<h2 class="tagLine_h2 italicText">
@@ -178,6 +180,8 @@
 								</h2>
 							</div>
 
+							<div class="gradientDivider"></div>
+
 							<div class="heroImagesContainer heroImagesContainer--mobile">
 
 								<div class="section_content_imageContainer row1col1">
@@ -186,7 +190,7 @@
 								</div>
 
 								<div class="gradientDotContainer">
-									<div class="gradientDotContainer_column">
+									<div class="gradientDotContainer_column row1col1">
 										<div class="gradientDot gradientDot--1"></div>
 										<div class="gradientDot gradientDot--1"></div>
 										<div class="gradientDot gradientDot--2"></div>
@@ -200,8 +204,8 @@
 										<div class="gradientDot gradientDot--6"></div>
 										<div class="gradientDot gradientDot--6"></div>
 									</div>
-									<div></div> <!-- Empty column for IE -->
-									<div class="gradientDotContainer_column gradientDotContainer_column--marginTop">
+									<div class="row1col2"></div> <!-- Empty column for IE -->
+									<div class="gradientDotContainer_column gradientDotContainer_column--marginTop row1col3">
 										<div class="gradientDot gradientDot--1"></div>
 										<div class="gradientDot gradientDot--1"></div>
 										<div class="gradientDot gradientDot--2"></div>
@@ -229,25 +233,149 @@
 							</div> -->
 
 							<p class="sectionText">
-								With a strong background in acting and production working for companies like Stacey Mindich Productions on Broadway to The Walt Disney World Company, Kate knows what it takes to make your brand shine. Specializing in <span class="boldText">Animation</span>, <span class="boldText">Commercial</span>, <span class="boldText">Narration</span>, <span class="boldText">Gaming</span>, <span class="boldText">E-Learning</span>, and <span class="boldText">Promos</span>, she has a sound that reminds you of your happiest childhood memories like gathering around the fireplace or walking through your first theme park.
+								Specializing in <span class="boldText">Animation</span>, <span class="boldText">Commercial</span>, <span class="boldText">Narration</span>, <span class="boldText">Gaming</span>, <span class="boldText">E-Learning</span>, and <span class="boldText">Promos</span>, she has a sound that reminds you of your happiest childhood memories like gathering around the fireplace or walking through your first theme park.
 							</p>
 
-							<div class="buttonContainer" style="margin-top: 25px;">
+							<div class="audioContainer">
+								
+								<audio class="audioContainer_player row1col1 ie-width-minus-20" controls="controls" controls="download" duration>
+									<source src="test.ogg" type="audio/ogg">
+									<source src="/Users/Rhys/Music/test.mp3" type="audio/mpeg">
+									Your browser does not support the audio element.
+								</audio>
 
-								<!-- <a class="button" href="media/rhys-thomas-resume.pdf" target="_blank" rel="noopener" aria-label="Resume">
+								<div class="buttonContainer row1col2">
+									<a class="button button--circle" href="/Users/Rhys/Music/test.mp3" target="_blank" rel="noopener" aria-label="Demo">
+										<span class="button_text boldText">
+											
+											<i class="button_text_icon far fa-download"></i>
+										</span>
+									</a>
+								</div>
+
+							</div>
+
+							<div class="audioContainer">
+								
+								<audio class="audioContainer_player row1col1 ie-width-minus-20" controls="controls" controls="download" duration>
+									<source src="test.ogg" type="audio/ogg">
+									<source src="/Users/Rhys/Music/test.mp3" type="audio/mpeg">
+									Your browser does not support the audio element.
+								</audio>
+
+								<div class="buttonContainer row1col2">
+									<a class="button button--circle" href="/Users/Rhys/Music/test.mp3" target="_blank" rel="noopener" aria-label="Demo">
+										<span class="button_text boldText">
+											
+											<i class="button_text_icon far fa-download"></i>
+										</span>
+									</a>
+								</div>
+
+							</div>
+
+							<!-- <div class="buttonContainer" style="margin-top: 25px;">
+								<a class="button" href="media/rhys-thomas-resume.pdf" target="_blank" rel="noopener" aria-label="Resume">
 									<span class="button_text boldText">
 										View Resume
 										<i class="button_text_icon fas fa-arrow-right"></i>
 									</span>
-								</a> -->
-
-								<a class="button" href="https://www.linkedin.com/in/rhys-thomas-6ba6641a1/" target="_blank" rel="noopener" aria-label="Demo">
+								</a>
+								<a class="button button--ghost" href="/Users/Rhys/Music/test.mp3" target="_blank" rel="noopener" aria-label="Demo">
 									<span class="button_text boldText">
-										Listen To Demo
-										<i class="button_text_icon far fa-volume-up"></i>
+										Download Demo
+										<i class="button_text_icon far fa-download"></i>
 									</span>
 								</a>
+							</div> -->
 
+						</div>
+
+					</div>
+
+				</section>
+
+			</div>
+
+			<div class="sectionContainer" id="experience">
+
+				<section class="section section--blue section--training">
+				
+					<div class="section_content maxWidth--1200">
+
+						<div class="ie-padding-right">
+
+							<div class="sectionHeading row1col1">
+								<h2 class="sectionHeading_h2 boldText">
+									Training & Experience
+								</h2>
+							</div>
+
+							<div class="textContainer row2col1">
+							
+								<p class="sectionText">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+
+								<ul class="sectionText sectionText_ul">
+									<li class="sectionText_ul_li">
+										Example bullet point
+									</li>
+									<li class="sectionText_ul_li">
+										Example bullet point
+									</li>
+									<li class="sectionText_ul_li">
+										Example bullet point
+									</li>
+									<li class="sectionText_ul_li">
+										Example bullet point
+									</li>
+								</ul>
+
+								<p class="sectionText">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+								</p>
+
+							</div>
+
+						</div>
+
+						<div class="bulletContainer row1col2">
+							
+							<div class="bullet bullet--1 row1col1">
+								<h4 class="bullet_text">
+									Example bullet point
+								</h4>
+							</div>
+
+							<div class="bullet bullet--2 row1col2">
+								<h4 class="bullet_text">
+									Example bullet 
+								</h4>
+							</div>
+
+							<div class="bullet bullet--3 row2col1">
+								<h4 class="bullet_text">
+									Example longer bullet point
+								</h4>
+							</div>
+
+							<div class="bullet bullet--4 row2col2">
+								<h4 class="bullet_text">
+									Short bullet
+								</h4>
+							</div>
+
+							<div class="bullet bullet--5 row3col1">
+								<h4 class="bullet_text">
+									Example bullet point
+								</h4>
+							</div>
+
+							<div class="bullet bullet--6 row3col2">
+								<h4 class="bullet_text">
+									Bullet point
+								</h4>
 							</div>
 
 						</div>
@@ -260,8 +388,10 @@
 
 		</main>
 
+		<div class="gradientBar"></div>
+
 		<footer class="footer">
-			
+
 			<div class="footer_icons">
 				
 				<a class="iconContainer" href="https://www.linkedin.com/in/rhys-thomas-6ba6641a1/" target="_blank" rel="noopener" aria-label="LinkedIn">
