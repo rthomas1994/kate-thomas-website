@@ -781,6 +781,15 @@ audio::-webkit-media-controls-panel {
     .contactForm .buttonContainer .button {
       max-width: 100%; } }
 @media only screen and (max-width: 500px) {
+  .sectionHeading_h1 {
+    margin-bottom: 15px;
+    font-size: 2.6em;
+    line-height: 1.3em; }
+  .sectionHeading_h2 {
+    margin-bottom: 15px;
+    font-size: 2.2em;
+    line-height: 1.1em; }
+
   .sectionContainer .section--hero .section_content .heroImagesContainer--mobile {
     -ms-grid-columns: 1fr 35px;
     grid-template-columns: 1fr 35px;
@@ -796,9 +805,9 @@ audio::-webkit-media-controls-panel {
     .gallery_col--marginTop {
       margin-top: 0px; }
     .gallery .imageContainer {
-      max-width: 340px;
+      max-width: 280px;
       margin: auto;
-      margin-bottom: 20px; }
+      margin-bottom: 30px; }
 
   .contactIcons {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -810,6 +819,9 @@ audio::-webkit-media-controls-panel {
       .contactIcons .contactIcon_icon {
         font-size: 22px; } }
 @media only screen and (max-width: 400px) {
+  .contactForm .gradientBar {
+    margin-bottom: 30px; }
+
   .contactIcons {
     grid-column-gap: 15px; }
     .contactIcons .contactIcon {
