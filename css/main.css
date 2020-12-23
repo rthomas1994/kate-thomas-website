@@ -248,14 +248,42 @@ body {
     width: 90%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 300px;
-    grid-template-columns: 1fr 300px;
+    -ms-grid-columns: 1fr 400px;
+    grid-template-columns: 1fr 400px;
     grid-column-gap: 100px; }
     .sectionContainer .section--training .section_content .sectionHeading_h2 {
       margin-bottom: 30px; }
+  .sectionContainer .section--gallery {
+    padding: 100px 0px; }
   .sectionContainer .section_content {
     display: block;
     margin: auto; }
+
+.gallery {
+  width: 90%;
+  max-width: 1024px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px; }
+  .gallery_col--marginTop {
+    margin-top: 70%; }
+  .gallery .placeholder {
+    width: 100%;
+    height: 45%;
+    border-radius: 5px; }
+    .gallery .placeholder--yellow {
+      background-color: #FFFCEB; }
+    .gallery .placeholder--blue {
+      background-color: #EDF6FC; }
+  .gallery .imageContainer_img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px; }
 
 .bulletContainer {
   margin: auto 0px; }
@@ -264,28 +292,35 @@ body {
     display: block;
     background-color: #fff;
     margin-bottom: 20px;
-    padding: 10px;
-    padding-left: 20px;
+    padding: 12px 20px;
     box-shadow: 0px 2px 8px #DBE8F1; }
     .bulletContainer .bullet:last-of-type {
       margin-bottom: 0px; }
     .bulletContainer .bullet--1 {
-      border-left: 5px solid #A3CEF1; }
+      border-left: 7px solid #A3CEF1; }
     .bulletContainer .bullet--2 {
-      border-left: 5px solid #7BDFF9; }
+      border-left: 7px solid #7BDFF9; }
     .bulletContainer .bullet--3 {
-      border-left: 5px solid #5FEEEB; }
+      border-left: 7px solid #5FEEEB; }
     .bulletContainer .bullet--4 {
-      border-left: 5px solid #78F8C7; }
+      border-left: 7px solid #78F8C7; }
     .bulletContainer .bullet--5 {
-      border-left: 5px solid #B3FC99; }
+      border-left: 7px solid #B3FC99; }
     .bulletContainer .bullet--6 {
-      border-left: 5px solid #F9F871; }
-    .bulletContainer .bullet_text {
+      border-left: 7px solid #F9F871; }
+    .bulletContainer .bullet_heading {
       margin: 0px;
+      margin-bottom: 3px;
       font-size: 1.2em;
       line-height: 1.5em;
-      font-weight: 600; }
+      font-weight: 700; }
+      .bulletContainer .bullet_heading_icon {
+        margin-right: 5px; }
+    .bulletContainer .bullet_text {
+      margin: 0px;
+      font-size: 1.1em;
+      line-height: 1.5em;
+      font-weight: 400; }
 
 .textContainer {
   display: block;
@@ -436,11 +471,9 @@ audio::-webkit-media-controls-panel {
   .buttonContainer .button--ghost {
     border: 1px solid #DC0073;
     background-color: #fff;
-    background-image: none;
-    padding: 12px 20px; }
+    background-image: none; }
     .buttonContainer .button--ghost .button_text {
-      color: #DC0073 !important;
-      font-size: 1em; }
+      color: #DC0073 !important; }
     .buttonContainer .button--ghost:hover {
       background-color: #fff5fa; }
       .buttonContainer .button--ghost:hover .button_text {
@@ -534,7 +567,12 @@ audio::-webkit-media-controls-panel {
     width: calc(100% - 20px); }
 
   .ie-margin-top-30 {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+
+  .gallery_col {
+    padding-right: 20px; }
+    .gallery_col--marginTop {
+      margin-top: 10%; } }
 @media only screen and (max-width: 1024px) {
   .sectionContainer .section--hero .section_content {
     -ms-grid-columns: 335px 1fr;
@@ -543,7 +581,11 @@ audio::-webkit-media-controls-panel {
     .sectionContainer .section--hero .section_content .heroImagesContainer {
       grid-column-gap: 30px; }
     .sectionContainer .section--hero .section_content_textContainer {
-      margin-left: 10px; } }
+      margin-left: 10px; }
+  .sectionContainer .section--training .section_content {
+    -ms-grid-columns: 1fr 350px;
+    grid-template-columns: 1fr 350px;
+    grid-gap: 50px; } }
 @media only screen and (max-width: 880px) {
   .sectionContainer .section--hero .section_content {
     -ms-grid-columns: 1fr;
@@ -559,21 +601,30 @@ audio::-webkit-media-controls-panel {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-row-gap: 20px; }
-    .sectionContainer .section--training .section_content .bulletContainer {
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 20px; }
-      .sectionContainer .section--training .section_content .bulletContainer .bullet {
-        margin-bottom: 0px; } }
+  .sectionContainer .section--gallery {
+    padding: 70px 0px; }
+
+  .gallery {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; }
+
+  .bulletContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px; }
+    .bulletContainer .bullet {
+      margin-bottom: 0px; } }
+@media only screen and (max-width: 800px) {
+  .bulletContainer {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 20px; } }
 @media only screen and (max-width: 600px) {
-  .sectionContainer .section {
-    margin: 30px auto;
-    margin-bottom: 100px; }
-    .sectionContainer .section--training .section_content .bulletContainer {
-      -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr; }
+  .sectionContainer .section--training .section_content .bulletContainer {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr; }
 
   .sectionHeading_h1 {
     font-size: 3em; }
@@ -586,7 +637,8 @@ audio::-webkit-media-controls-panel {
       .buttonContainer--inlineFlex .button:last-of-type {
         margin-bottom: 0px; }
   .buttonContainer .button {
-    width: 100%; } }
+    width: 100%;
+    padding: 12px 0px; } }
 @media only screen and (max-width: 500px) {
   .sectionContainer .section--hero .section_content .heroImagesContainer--mobile {
     -ms-grid-columns: 1fr 35px;
@@ -594,4 +646,15 @@ audio::-webkit-media-controls-panel {
     grid-column-gap: 20px; }
     .sectionContainer .section--hero .section_content .heroImagesContainer--mobile .gradientDotContainer .gradientDot {
       height: 15px;
-      width: 15px; } }
+      width: 15px; }
+
+  .gallery {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 0px; }
+    .gallery_col--marginTop {
+      margin-top: 0px; }
+    .gallery .imageContainer {
+      max-width: 340px;
+      margin: auto;
+      margin-bottom: 20px; } }
