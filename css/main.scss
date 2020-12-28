@@ -559,7 +559,7 @@ body {
 			display: none;
 			position: fixed;
 			top: 0px;
-			left: -400px;
+			left: -100%;
 
 			.navItems {
 				display: block;
@@ -1621,6 +1621,7 @@ audio {
 					.heroImagesContainer {
 
 						&--mobile {
+							max-width: 300px;
 							-ms-grid-columns: 1fr 35px;
 							grid-template-columns: 1fr 35px;
 							grid-column-gap: 20px;
