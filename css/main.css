@@ -216,10 +216,10 @@ body {
     padding-right: 40px;
     background: #2a2a72;
     background: linear-gradient(90deg, #2a2a72 0%, #320e3b 100%);
-    -webkit-transition: top 0.2s;
-    -moz-transition: top 0.2s;
-    -o-transition: top 0.2s;
-    transition: top 0.2s; }
+    -webkit-transition: left 0.2s;
+    -moz-transition: left 0.2s;
+    -o-transition: left 0.2s;
+    transition: left 0.2s; }
     .navContainer_content .logoContainer {
       display: block; }
       .navContainer_content .logoContainer_img {
@@ -303,7 +303,8 @@ body {
     .navContainer_content--mobile {
       display: none;
       position: fixed;
-      top: -500px; }
+      top: 0px;
+      left: -400px; }
       .navContainer_content--mobile .navItems {
         display: block;
         margin-top: 20px;
@@ -335,7 +336,7 @@ body {
         grid-column: 1 / span 3;
         text-align: center; }
     .navContainer_content--slideDown {
-      top: 0px;
+      left: 0px;
       z-index: 999; }
 
 .gradientBar {
