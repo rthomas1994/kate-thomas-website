@@ -291,7 +291,8 @@ body {
       border-radius: 5px; }
       .navContainer_content .menuContainer_icon {
         font-size: 20px;
-        color: #fff; }
+        color: #fff;
+        margin-top: 2px; }
     .navContainer_content .navSpace {
       display: none; }
     .navContainer_content .navDivider {
