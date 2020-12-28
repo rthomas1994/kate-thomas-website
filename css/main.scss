@@ -599,8 +599,22 @@ body {
 			.contactIcons {
 				@include grid;
 				padding: 15px 0px;
+				padding-top: 10px;
 			    grid-column: 1 / span 3;
+			    grid-column-gap: 20px;
 			    text-align: center;
+
+			    .contactIcon {
+			    	height: 50px;
+			    	width: 50px;
+
+			    	&_icon {
+			    		font-size: 22px;
+			    		margin-top: 5px;
+			    	}
+
+			    }
+
 			}
 
 		}
@@ -799,6 +813,7 @@ body {
 .contactForm {
 	padding: 30px 40px;
 	background-color: #fff;
+	border-radius: 5px;
 
 	.sectionHeading {
 
@@ -841,6 +856,13 @@ body {
 		width: 60px;
 		background-color: #2A2A72;
 		border-radius: 100%;
+		cursor: pointer;
+		@include transition(transform, 0.2s);
+
+		&:hover {
+			background-color: #1d1d5a;
+			@include translateY(-3px);
+		}
 
 		&_icon {
 			color: #fff;
@@ -1632,7 +1654,7 @@ audio {
 		}
 
 		.imageContainer {
-			max-width: 280px;
+			max-width: 260px;
 			margin: auto;
 			margin-bottom: 30px;
 		}

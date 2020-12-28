@@ -333,8 +333,16 @@ body {
         display: -ms-grid;
         display: grid;
         padding: 15px 0px;
+        padding-top: 10px;
         grid-column: 1 / span 3;
+        grid-column-gap: 20px;
         text-align: center; }
+        .navContainer_content--mobile .contactIcons .contactIcon {
+          height: 50px;
+          width: 50px; }
+          .navContainer_content--mobile .contactIcons .contactIcon_icon {
+            font-size: 22px;
+            margin-top: 5px; }
     .navContainer_content--slideDown {
       left: 0px;
       z-index: 999; }
@@ -443,7 +451,8 @@ body {
 
 .contactForm {
   padding: 30px 40px;
-  background-color: #fff; }
+  background-color: #fff;
+  border-radius: 5px; }
   .contactForm .sectionHeading_h2 {
     margin-bottom: 30px; }
   .contactForm .gradientBar {
@@ -470,7 +479,17 @@ body {
     height: 60px;
     width: 60px;
     background-color: #2A2A72;
-    border-radius: 100%; }
+    border-radius: 100%;
+    cursor: pointer;
+    -webkit-transition: transform 0.2s;
+    -moz-transition: transform 0.2s;
+    -o-transition: transform 0.2s;
+    transition: transform 0.2s; }
+    .contactIcons .contactIcon:hover {
+      background-color: #1d1d5a;
+      -webkit-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+      transform: translateY(-3px); }
     .contactIcons .contactIcon_icon {
       color: #fff;
       font-size: 26px;
@@ -897,7 +916,7 @@ audio::-webkit-media-controls-panel {
     .gallery_col--marginTop {
       margin-top: 0px; }
     .gallery .imageContainer {
-      max-width: 280px;
+      max-width: 260px;
       margin: auto;
       margin-bottom: 30px; }
 

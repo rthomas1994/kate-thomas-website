@@ -1,6 +1,10 @@
-var scrollOffset = 70;
+var scrollOffset = 90;
 
 $(document).ready(function() {
+
+    if ($(window).width() < 769) {
+        scrollOffset = 70;
+    }
 
     // Scroll to relevant section from nav bar
     $(".navItem").click(function() {
