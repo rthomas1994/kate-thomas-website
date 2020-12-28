@@ -204,10 +204,9 @@ body {
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 10;
-  background: #2a2a72;
-  background: linear-gradient(90deg, #2a2a72 0%, #320e3b 100%); }
+  z-index: 10; }
   .navContainer_content {
+    width: 100%;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -215,7 +214,12 @@ body {
     align-items: center;
     padding: 16px 20px;
     padding-right: 40px;
-    width: 100%; }
+    background: #2a2a72;
+    background: linear-gradient(90deg, #2a2a72 0%, #320e3b 100%);
+    -webkit-transition: top 0.2s;
+    -moz-transition: top 0.2s;
+    -o-transition: top 0.2s;
+    transition: top 0.2s; }
     .navContainer_content .logoContainer {
       display: block; }
       .navContainer_content .logoContainer_img {
@@ -236,7 +240,6 @@ body {
         border-radius: 100%;
         background-color: #fff;
         margin: auto;
-        margin-left: 15px;
         font-size: 2em;
         line-height: 60px;
         text-align: center; }
@@ -247,6 +250,7 @@ body {
       flex-wrap: wrap;
       align-items: center; }
       .navContainer_content .navItems .navItem {
+        text-decoration: none;
         display: block;
         margin-right: 50px; }
         .navContainer_content .navItems .navItem--button {
@@ -279,6 +283,60 @@ body {
           font-size: 1.2em;
           text-decoration: none;
           color: #fff; }
+    .navContainer_content .menuContainer {
+      display: none;
+      height: 40px;
+      width: 40px;
+      border: 1px solid #fff;
+      border-radius: 5px; }
+      .navContainer_content .menuContainer_icon {
+        font-size: 20px;
+        color: #fff; }
+    .navContainer_content .navSpace {
+      display: none; }
+    .navContainer_content .navDivider {
+      display: none; }
+    .navContainer_content .contactIcons {
+      display: none; }
+      .navContainer_content .contactIcons .contactIcon {
+        background-color: rgba(255, 255, 255, 0.2); }
+    .navContainer_content--mobile {
+      display: none;
+      position: fixed;
+      top: -500px; }
+      .navContainer_content--mobile .navItems {
+        display: block;
+        margin-top: 20px;
+        padding: 25px 0px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        grid-column: 1 / span 3;
+        text-align: center; }
+        .navContainer_content--mobile .navItems .navItem {
+          margin: auto;
+          margin-right: 0px;
+          margin-bottom: 40px; }
+          .navContainer_content--mobile .navItems .navItem:last-of-type {
+            margin: 0px;
+            margin: auto; }
+          .navContainer_content--mobile .navItems .navItem--button {
+            margin: auto;
+            max-width: 300px; }
+      .navContainer_content--mobile .navDivider {
+        height: 1px;
+        width: 150px;
+        display: block;
+        grid-column: 1 / span 3;
+        margin: 20px auto;
+        background-color: rgba(255, 255, 255, 0.2); }
+      .navContainer_content--mobile .contactIcons {
+        display: -ms-grid;
+        display: grid;
+        padding: 15px 0px;
+        grid-column: 1 / span 3;
+        text-align: center; }
+    .navContainer_content--slideDown {
+      top: 0px;
+      z-index: 999; }
 
 .gradientBar {
   display: block;
@@ -757,6 +815,39 @@ audio::-webkit-media-controls-panel {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-gap: 20px; } }
+@media only screen and (max-width: 700px) {
+  .navContainer_content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 45px 1fr 40px;
+    grid-template-columns: 45px 1fr 40px;
+    padding: 15px 20px; }
+    .navContainer_content .logoContainer_text {
+      height: 45px;
+      width: 45px;
+      line-height: 45px;
+      font-size: 1.6em; }
+    .navContainer_content .navSpace {
+      display: block; }
+    .navContainer_content .navItems {
+      display: none; }
+    .navContainer_content .menuContainer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .navContainer_content--mobile .navItems {
+      display: block; }
+    .navContainer_content--mobile .contactIcons {
+      display: -ms-grid;
+      display: grid; }
+
+  .pageContent {
+    padding-top: 75px; }
+
+  .sectionContainer .section {
+    padding-top: 50px; }
+    .sectionContainer .section--hero {
+      padding-top: 30px; } }
 @media only screen and (max-width: 600px) {
   .sectionContainer .section--training .section_content .bulletContainer {
     -ms-grid-columns: 1fr;

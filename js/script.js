@@ -12,30 +12,19 @@ $(document).ready(function() {
             scrollTop: $("#" + clickedNavItem).offset().top - scrollOffset
         }, 400);
 
+        // Hide mobile nav
+        $("#mobile_nav").removeClass("navContainer_content--slideDown");
+
     });
 
-	// $("#nav_home").click(function() {
- //        $("html, body").animate({
- //            scrollTop: 0
- //        }, 400)
-	// });
+    // Show navbar on click
+    $("#show_navbar").click(function() {
+        $("#mobile_nav").addClass("navContainer_content--slideDown");
+    });
 
-	// $("#nav_work").click(function() {
- //        $("html, body").animate({
- //            scrollTop: $("#work").offset().top - scrollOffset
- //        }, 400)
-	// });
-
-    // $("#nav_resume").click(function() {
-    //     $("html, body").animate({
-    //         scrollTop: $("#resume").offset().top - scrollOffset
-    //     }, 400)
-    // });
-
-	// $("#nav_contact").click(function() {
- //        $("html, body").animate({
- //            scrollTop: $("#contact").offset().top - scrollOffset
- //        }, 400)
-	// });
+    // Hide navbar on click
+    $("#hide_navbar").click(function() {
+        $("#mobile_nav").removeClass("navContainer_content--slideDown");
+    });
 
 });
