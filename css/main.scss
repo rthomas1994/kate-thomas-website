@@ -1464,7 +1464,8 @@ audio {
 			@include grid;
 			-ms-grid-columns: 45px 1fr 40px;
 			grid-template-columns: 45px 1fr 40px;
-			padding: 15px 20px;
+			padding: 18px 20px;
+			padding-left: 15px;
 
 			.logoContainer {
 

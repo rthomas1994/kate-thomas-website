@@ -1,20 +1,20 @@
-var scrollOffset = 90;
+var scrollOffset = 60;
 
 $(document).ready(function() {
-
-    if ($(window).width() < 769) {
-        scrollOffset = 70;
-    }
-
+    
     // Scroll to relevant section from nav bar
     $(".navItem").click(function() {
 
         // Get clicked item
         var clickedNavItem = $(this).attr("id").replace("nav_", "");
 
-        $("html, body").animate({
-            scrollTop: $("#" + clickedNavItem).offset().top - scrollOffset
-        }, 400);
+        if (clickedNavItem == "about") {
+            $("html, body").animate({ scrollTop: 0 }, 400);
+        } else {
+            $("html, body").animate({
+                scrollTop: $("#" + clickedNavItem).offset().top - scrollOffset
+            }, 400);
+        }
 
         // Hide mobile nav
         $("#mobile_nav").removeClass("navContainer_content--slideDown");
