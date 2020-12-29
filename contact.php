@@ -25,8 +25,8 @@ if (isset($_POST['message']) && strlen($_POST['message']) > 0 && strlen($_POST['
 $subject = "{$name} - Filled Out Contact Form";
 $recipient = "rhysthomas1994@gmail.com";
 $formcontent = "<b>From:</b> {$name}";
-$formcontent = "<b>Email:</b> {$email}";
-$formcontent .= "<b>Message:</b> {$message}";
+$formcontent .= "<br><br><b>Email:</b> {$email}";
+$formcontent .= "<br><br><b>Message:</b> {$message}";
 $headers = "From: {$name} < {$email} >\n";
 $headers .='Reply-To: '. $email . "\r\n" ;
 $headers .='X-Mailer: PHP/' . phpversion();
