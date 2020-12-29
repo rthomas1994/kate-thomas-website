@@ -38,7 +38,6 @@
       background-color: #E1E1E1;
       border: none;
       border-bottom: none;
-      border-radius: 0px;
       transition: 0.3s;
       color: #5A5A5A;
       pointer-events: none; }
@@ -455,6 +454,35 @@ body {
   padding: 30px 40px;
   background-color: #fff;
   border-radius: 5px; }
+  .contactForm #contact_form_confirmation {
+    display: block !important; }
+  .contactForm #contact_form_body {
+    display: none !important; }
+  .contactForm .confirmation {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 80px 1fr;
+    grid-template-columns: 80px 1fr;
+    margin-bottom: 40px;
+    padding: 20px 0px;
+    background-color: #fff0f8;
+    border: 1px solid #DC0073;
+    border-radius: 5px; }
+    .contactForm .confirmation_iconContainer {
+      border-right: 1px solid #DC0073; }
+      .contactForm .confirmation_iconContainer_icon {
+        color: #DC0073;
+        font-size: 30px; }
+    .contactForm .confirmation_textContainer {
+      padding: 0px 20px;
+      padding-left: 25px; }
+      .contactForm .confirmation_textContainer_text {
+        display: block;
+        font-size: 1.2em;
+        line-height: 1.5em; }
+        .contactForm .confirmation_textContainer_text--heading {
+          font-size: 1.3em;
+          margin-bottom: 10px; }
   .contactForm .sectionHeading_h2 {
     margin-bottom: 30px; }
   .contactForm .gradientBar {
@@ -698,6 +726,12 @@ audio::-webkit-media-controls-panel {
     .buttonContainer .button--circle .button_text_icon {
       margin: 0px !important;
       font-size: 18px; }
+  .buttonContainer .button--spin:hover {
+    pointer-events: none !important;
+    background-position: initial !important; }
+  .buttonContainer .button--spin .button_text_icon {
+    font-size: 20px;
+    height: 19px; }
   .buttonContainer .button--disabled {
     background-color: #d1d1d1; }
     .buttonContainer .button--disabled:hover {
@@ -893,7 +927,21 @@ audio::-webkit-media-controls-panel {
   .contactForm {
     padding: 30px; }
     .contactForm .buttonContainer .button {
-      max-width: 100%; } }
+      max-width: 100%; }
+    .contactForm .confirmation {
+      display: block;
+      padding: 20px; }
+      .contactForm .confirmation_iconContainer {
+        border-right: 0px;
+        padding: 5px 0px; }
+        .contactForm .confirmation_iconContainer_icon {
+          font-size: 36px; }
+      .contactForm .confirmation_textContainer {
+        padding: 20px 0px;
+        padding-bottom: 10px;
+        text-align: center; }
+        .contactForm .confirmation_textContainer_text--heading {
+          margin-bottom: 20px; } }
 @media only screen and (max-width: 500px) {
   .sectionHeading_h1 {
     margin-bottom: 15px;
@@ -912,17 +960,16 @@ audio::-webkit-media-controls-panel {
     .sectionContainer .section--hero .section_content .heroImagesContainer--mobile .gradientDotContainer .gradientDot {
       height: 15px;
       width: 15px; }
+  .sectionContainer .section--gallery {
+    padding: 50px 0px; }
 
   .gallery {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    grid-gap: 0px; }
-    .gallery_col--marginTop {
-      margin-top: 0px; }
+    grid-gap: 10px; }
     .gallery .imageContainer {
-      max-width: 260px;
-      margin: auto;
-      margin-bottom: 30px; }
+      margin-bottom: 10px; }
+
+  .contactForm .confirmation {
+    padding: 15px; }
 
   .contactIcons {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;

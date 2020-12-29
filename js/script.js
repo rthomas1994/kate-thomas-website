@@ -34,21 +34,42 @@ $(document).ready(function() {
     // Contact Form
     $("#submit_form").click(function() {
 
+        // Get form data
         var formData = $("#contact_form").serialize();
 
-        // Stuff
-        $.ajax({
-            url: "/contact.php",
-            type: "POST",
-            data: formData,
-            dataType: "json",
-            success: function(data) {
-                alert('Wooooo');
-            },
-            error: function(XMLHttpRequest, textStatus, errorThrown) {
-                alert("Oooooooooooooooooooooooooooooooooooops! There was an error!");
-            }
-        });
+        // Disable form
+        $(".contactFormInput").addClass("textFieldContainer_input--disabled");
+
+        // Show relevant buttons
+        $("#submit_form").addClass("displayNone");
+        $("#submit_form_spin").removeClass("displayNone");
+
+        setTimeout(function() {
+
+            // AJAX SUCCESS 
+            // Show confirmation message
+            $("#contact_form_body").addClass("displayNone");
+            $("#contact_form_confirmation").removeClass("displayNone");
+
+            // Scroll to top of form
+            $("html, body").animate({
+                scrollTop: $("#contact").offset().top - scrollOffset
+            }, 400);
+
+        }, 500);
+
+        // $.ajax({
+        //     url: "/contact.php",
+        //     type: "POST",
+        //     data: formData,
+        //     dataType: "json",
+        //     success: function(data) {
+        //         alert('Wooooo');
+        //     },
+        //     error: function(XMLHttpRequest, textStatus, errorThrown) {
+        //         alert("Oooooooooooooooooooooooooooooooooooops! There was an error!");
+        //     }
+        // });
 
     });
 

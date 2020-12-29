@@ -126,7 +126,7 @@ $colorRed: #d00000;
 			background-color: #E1E1E1;
 			border: none;
 			border-bottom: none;
-			border-radius: 0px;
+			// border-radius: 0px;
 			transition: 0.3s;
 			color: #5A5A5A;
 			pointer-events: none;
@@ -817,6 +817,55 @@ body {
 	background-color: #fff;
 	border-radius: 5px;
 
+	#contact_form_confirmation {
+		display: block !important;
+	}
+
+	#contact_form_body {
+		display: none !important;
+	}
+
+	.confirmation {
+		@include grid;
+		-ms-grid-columns: 80px 1fr;
+		grid-template-columns: 80px 1fr;
+		margin-bottom: 40px;
+		padding: 20px 0px;
+		background-color: #fff0f8;
+		border: 1px solid #DC0073;
+		border-radius: 5px;
+
+		&_iconContainer {
+			border-right: 1px solid #DC0073;
+
+			&_icon {
+				color: #DC0073;
+				font-size: 30px;
+			}
+
+		}
+
+		&_textContainer {
+			padding: 0px 20px;
+			padding-left: 25px;
+
+			&_text {
+				display: block;
+				font-size: 1.2em;
+				line-height: 1.5em;
+
+				&--heading {
+					font-size: 1.3em;
+					margin-bottom: 10px;
+				}
+
+			}
+
+		}
+
+
+	}
+
 	.sectionHeading {
 
 		&_h2 {
@@ -1191,6 +1240,20 @@ audio {
 	    	.button_text_icon {
 	    		margin: 0px !important;
 	    		font-size: 18px;
+	    	}
+
+	    }
+
+	    &--spin {
+
+	    	&:hover {
+	    		pointer-events: none !important;
+	    		background-position: initial !important;
+	    	}
+
+	    	.button_text_icon {
+			    font-size: 20px;
+			    height: 19px;
 	    	}
 
 	    }
@@ -1589,6 +1652,37 @@ audio {
 
 		}
 
+		.confirmation {
+			display: block;
+			padding: 20px;
+
+			&_iconContainer {
+				border-right: 0px;
+				padding: 5px 0px;
+
+				&_icon {
+					font-size: 36px;
+				}
+
+			}
+
+			&_textContainer {
+				padding: 20px 0px;
+				padding-bottom: 10px;
+				text-align: center;
+
+				&_text {
+
+					&--heading {
+						margin-bottom: 20px;
+					}
+
+				}
+
+			}
+
+		}
+
 	}
 
 }
@@ -1644,23 +1738,35 @@ audio {
 
 			}
 
+			&--gallery {
+				padding: 50px 0px;
+			}
+
 		}
 
 	}
 
 	.gallery {
-		-ms-grid-columns: 1fr;
-		grid-template-columns: 1fr;
-		grid-gap: 0px;
+		// -ms-grid-columns: 1fr;
+		// grid-template-columns: 1fr;
+		grid-gap: 10px;
 
-		&_col--marginTop {
-			margin-top: 0px;
-		}
+		// &_col--marginTop {
+		// 	margin-top: 0px;
+		// }
 
 		.imageContainer {
-			max-width: 260px;
-			margin: auto;
-			margin-bottom: 30px;
+			// max-width: 260px;
+			// margin: auto;
+			margin-bottom: 10px;
+		}
+
+	}
+
+	.contactForm {
+
+		.confirmation {
+			padding: 15px;
 		}
 
 	}
