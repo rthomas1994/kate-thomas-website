@@ -24,14 +24,16 @@ if (isset($_POST['message']) && strlen($_POST['message']) > 0 && strlen($_POST['
 
 $subject = "{$name} - Filled Out Contact Form";
 $recipient = "rhysthomas1994@gmail.com";
-$formcontent = "From: {$name} \n Message: {$message}";
+$formcontent = "<b>From:</b> {$name}";
+$formcontent = "<b>Email:</b> {$email}";
+$formcontent .= "<b>Message:</b> {$message}";
 $headers = "From: {$name} < {$email} >\n";
 $headers .='Reply-To: '. $email . "\r\n" ;
 $headers .='X-Mailer: PHP/' . phpversion();
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
 
-mail($recipient, $subject, $formcontent, $headers) || throwErrorAndExit("Error submitting contact request. Please check your information and try again later.");
+mail($recipient, $subject, $formcontent, $headers) || throwErrorAndExit("There was an issue submitting your contact request. Please check your information and try again later.");
 
 header('Content-Type: application/json; charset=UTF-8');
 
