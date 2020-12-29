@@ -1042,7 +1042,7 @@ body {
 	&--mobile {
 		display: none;
 		max-width: 350px;
-		margin-top: 30px;
+		margin-top: 35px;
 		margin-bottom: 30px;
 		-ms-grid-columns: 1fr 45px;
 		grid-template-columns: 1fr 45px;
@@ -1349,8 +1349,8 @@ audio {
 	&_text {
 		display: block;
 		margin: auto;
-		margin-top: 30px;
-		font-size: 1.4em;
+		// margin-top: 30px;
+		font-size: 1.2em;
 		color: $colorWhite;
 
 		&_icon {
@@ -1443,6 +1443,7 @@ audio {
 		.section {
 
 			&--hero {
+				padding-top: 40px;
 
 				.section_content {
 					-ms-grid-columns: 1fr;
@@ -1581,7 +1582,7 @@ audio {
 			padding-top: 50px;
 
 			&--hero {
-				padding-top: 30px;
+				padding-top: 40px;
 			}
 
 		}
@@ -1692,8 +1693,8 @@ audio {
 	.sectionHeading {
 
 		&_h1 {
-			margin-bottom: 15px;
-			font-size: 2.6em;
+			margin-bottom: 25px;
+			font-size: 2.8em;
 			line-height: 1.3em;
 		}
 

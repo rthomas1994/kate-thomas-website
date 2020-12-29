@@ -601,7 +601,7 @@ body {
   .heroImagesContainer--mobile {
     display: none;
     max-width: 350px;
-    margin-top: 30px;
+    margin-top: 35px;
     margin-bottom: 30px;
     -ms-grid-columns: 1fr 45px;
     grid-template-columns: 1fr 45px; }
@@ -799,8 +799,7 @@ audio::-webkit-media-controls-panel {
   .footer_text {
     display: block;
     margin: auto;
-    margin-top: 30px;
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #fff; }
     .footer_text_icon {
       margin-right: 5px; }
@@ -833,16 +832,18 @@ audio::-webkit-media-controls-panel {
     grid-template-columns: 1fr 350px;
     grid-gap: 50px; } }
 @media only screen and (max-width: 880px) {
-  .sectionContainer .section--hero .section_content {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr; }
-    .sectionContainer .section--hero .section_content .heroImagesContainer--mobile {
-      display: -ms-grid;
-      display: grid; }
-    .sectionContainer .section--hero .section_content .heroImagesContainer--desktop {
-      display: none; }
-    .sectionContainer .section--hero .section_content .textContainer {
-      margin-left: 0px; }
+  .sectionContainer .section--hero {
+    padding-top: 40px; }
+    .sectionContainer .section--hero .section_content {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; }
+      .sectionContainer .section--hero .section_content .heroImagesContainer--mobile {
+        display: -ms-grid;
+        display: grid; }
+      .sectionContainer .section--hero .section_content .heroImagesContainer--desktop {
+        display: none; }
+      .sectionContainer .section--hero .section_content .textContainer {
+        margin-left: 0px; }
   .sectionContainer .section--training .section_content {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -904,7 +905,7 @@ audio::-webkit-media-controls-panel {
   .sectionContainer .section {
     padding-top: 50px; }
     .sectionContainer .section--hero {
-      padding-top: 30px; } }
+      padding-top: 40px; } }
 @media only screen and (max-width: 600px) {
   .sectionContainer .section--training .section_content .bulletContainer {
     -ms-grid-columns: 1fr;
@@ -944,8 +945,8 @@ audio::-webkit-media-controls-panel {
           margin-bottom: 20px; } }
 @media only screen and (max-width: 500px) {
   .sectionHeading_h1 {
-    margin-bottom: 15px;
-    font-size: 2.6em;
+    margin-bottom: 25px;
+    font-size: 2.8em;
     line-height: 1.3em; }
   .sectionHeading_h2 {
     margin-bottom: 15px;

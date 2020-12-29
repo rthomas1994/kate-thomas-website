@@ -44,32 +44,32 @@ $(document).ready(function() {
         $("#submit_form").addClass("displayNone");
         $("#submit_form_spin").removeClass("displayNone");
 
-        setTimeout(function() {
 
-            // AJAX SUCCESS 
-            // Show confirmation message
-            $("#contact_form_body").addClass("displayNone");
-            $("#contact_form_confirmation").removeClass("displayNone");
+        $.ajax({
+            url: "/contact.php",
+            type: "POST",
+            data: formData,
+            dataType: "json",
+            success: function(data) {
 
-            // Scroll to top of form
-            $("html, body").animate({
-                scrollTop: $("#contact").offset().top - scrollOffset
-            }, 400);
+                setTimeout(function() {
 
-        }, 500);
+                    // Show confirmation message
+                    $("#contact_form_body").addClass("displayNone");
+                    $("#contact_form_confirmation").removeClass("displayNone");
 
-        // $.ajax({
-        //     url: "/contact.php",
-        //     type: "POST",
-        //     data: formData,
-        //     dataType: "json",
-        //     success: function(data) {
-        //         alert('Wooooo');
-        //     },
-        //     error: function(XMLHttpRequest, textStatus, errorThrown) {
-        //         alert("Oooooooooooooooooooooooooooooooooooops! There was an error!");
-        //     }
-        // });
+                    // Scroll to top of form
+                    $("html, body").animate({
+                        scrollTop: $("#contact").offset().top - scrollOffset
+                    }, 400);
+
+                }, 500);
+
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                alert("Oooooooooooooooooooooooooooooooooooops! There was an error!");
+            }
+        });
 
     });
 
