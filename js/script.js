@@ -1,7 +1,7 @@
 var scrollOffset = 60;
 
 $(document).ready(function() {
-    
+
     // Scroll to relevant section from nav bar
     $(".navItem").click(function() {
 
@@ -29,6 +29,27 @@ $(document).ready(function() {
     // Hide navbar on click
     $("#hide_navbar").click(function() {
         $("#mobile_nav").removeClass("navContainer_content--slideDown");
+    });
+
+    // Contact Form
+    $("#submit_form").click(function() {
+
+        var formData = $("#contact_form").serialize();
+
+        // Stuff
+        $.ajax({
+            url: "/contact.php",
+            type: "POST",
+            data: formData,
+            dataType: "json",
+            success: function(data) {
+                alert('Wooooo');
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                alert("Oooooooooooooooooooooooooooooooooooops! There was an error!");
+            }
+        });
+
     });
 
 });
