@@ -454,10 +454,6 @@ body {
   padding: 30px 40px;
   background-color: #fff;
   border-radius: 5px; }
-  .contactForm #contact_form_confirmation {
-    display: block !important; }
-  .contactForm #contact_form_body {
-    display: none !important; }
   .contactForm .confirmation {
     display: -ms-grid;
     display: grid;

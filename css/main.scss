@@ -817,13 +817,13 @@ body {
 	background-color: #fff;
 	border-radius: 5px;
 
-	#contact_form_confirmation {
-		display: block !important;
-	}
+	// #contact_form_confirmation {
+	// 	display: block !important;
+	// }
 
-	#contact_form_body {
-		display: none !important;
-	}
+	// #contact_form_body {
+	// 	display: none !important;
+	// }
 
 	.confirmation {
 		@include grid;
