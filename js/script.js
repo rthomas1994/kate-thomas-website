@@ -68,22 +68,27 @@ $(document).ready(function() {
             },
             error: function(XMLHttpRequest, textStatus, errorThrown) {
 
-                // Set error text
-                if (errorThrown.length > 0) {
-                    $("#contact_error_text").text(errorThrown);
-                } else {
-                    $("#contact_error_text").text("There was a problem sending your message. Please try again later.");
-                }
+                // Set timeout to provide visual feedback to user
+                setTimeout(function() {
 
-                // Enable form
-                $(".contactFormInput").removeClass("textFieldContainer_input--disabled");
+                    // Set error text
+                    if (errorThrown.length > 0) {
+                        $("#contact_error_text").text(errorThrown);
+                    } else {
+                        $("#contact_error_text").text("There was a problem sending your message. Please try again later.");
+                    }
 
-                // Show error message
-                $("#contact_error").removeClass("displayNone");
-                
-                // Show relevant buttons
-                $("#submit_form").removeClass("displayNone");
-                $("#submit_form_spin").addClass("displayNone");
+                    // Enable form
+                    $(".contactFormInput").removeClass("textFieldContainer_input--disabled");
+
+                    // Show error message
+                    $("#contact_error").removeClass("displayNone");
+                    
+                    // Show relevant buttons
+                    $("#submit_form").removeClass("displayNone");
+                    $("#submit_form_spin").addClass("displayNone");
+
+                }, 500);
 
             }
         });
