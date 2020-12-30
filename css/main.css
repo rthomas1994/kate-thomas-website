@@ -146,6 +146,10 @@ div, nav {
   -ms-grid-row: 1;
   -ms-grid-column: 3; }
 
+.row1col4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4; }
+
 .row2col1 {
   -ms-grid-row: 2;
   -ms-grid-column: 1; }
