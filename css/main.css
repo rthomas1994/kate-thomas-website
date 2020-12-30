@@ -5,6 +5,52 @@
   align-items: center;
   justify-content: center; }
 
+.notification {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  -ms-grid-columns: 45px 1fr;
+  grid-column-gap: 2px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: auto;
+  max-width: 1024px; }
+  .notification--noIcon {
+    display: block; }
+    .notification--noIcon .notification_text {
+      padding-left: 12px; }
+  .notification--green {
+    border: 2px solid #396D38; }
+    .notification--green .notification_text {
+      color: #396D38; }
+    .notification--green .notification_iconContainer_icon {
+      color: #396D38; }
+  .notification--red {
+    background-color: #d00000;
+    border: 1px solid #D00000; }
+    .notification--red .notification_text {
+      color: #fff; }
+    .notification--red .notification_iconContainer_icon {
+      color: #fff; }
+  .notification_text {
+    align-items: center;
+    padding: 8px 12px;
+    padding-left: 0px;
+    font-size: 1.1em;
+    line-height: 1.9em;
+    display: block; }
+    .notification_text_link {
+      color: #1B34A7;
+      text-decoration: underline; }
+      .notification_text_link:hover {
+        color: #1B34A7;
+        text-decoration: underline; }
+  .notification_iconContainer_icon {
+    margin: auto;
+    padding-top: 2px;
+    font-size: 1.2em; }
+
 .textFieldContainer {
   position: relative; }
   .textFieldContainer--red .textFieldContainer_input {

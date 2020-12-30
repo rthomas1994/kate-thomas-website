@@ -13,6 +13,8 @@ $colorBlack: #333;
 $colorWhite: #fff;
 $colorRed: #d00000;
 
+$link-blue: #1B34A7;
+
 @mixin flex {
 	display: -webkit-box;
     display: -ms-flexbox;
@@ -75,6 +77,86 @@ $colorRed: #d00000;
             transform: translateY($scale);
 }
 
+.notification {
+	@include grid;
+	grid-template-columns: 45px 1fr;
+	-ms-grid-columns: 45px 1fr;
+	grid-column-gap: 2px;
+	border: 1px solid #333;
+	border-radius: 5px;
+	background-color: #fff;
+	margin: auto;
+	max-width: 1024px;
+
+	&--noIcon {
+		display: block;
+
+		.notification_text {
+			padding-left: 12px;
+		}
+
+	}
+
+	&--green {
+		border: 2px solid #396D38;
+
+		.notification_text {
+			color: #396D38;
+		}
+
+		.notification_iconContainer_icon {
+	    	color: #396D38;
+	    }
+
+	}
+
+	&--red {
+		background-color: #d00000;
+	    border: 1px solid #D00000;
+
+		.notification_text {
+	    	color: #fff;
+		}
+
+	    .notification_iconContainer_icon {
+	    	color: #fff;
+	    }
+
+	}
+
+	&_text {
+		// @include flex;
+		align-items: center;
+		padding: 8px 12px;
+		padding-left: 0px;
+		font-size: 1.1em;
+		line-height: 1.9em;
+		display: block;
+
+		&_link {
+			color: $link-blue;
+			text-decoration: underline;
+
+			&:hover {
+				color: $link-blue;
+				text-decoration: underline;
+			}
+
+		}
+
+	}
+
+	&_iconContainer {
+
+		&_icon {
+			margin: auto;
+			padding-top: 2px;
+			font-size: 1.2em;
+		}
+
+	}
+
+}
 
 .textFieldContainer {
 	position: relative;
