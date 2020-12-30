@@ -21,11 +21,12 @@
     .notification--noIcon .notification_text {
       padding-left: 12px; }
   .notification--green {
-    border: 2px solid #396D38; }
+    background-color: #157F1F;
+    border: 1px solid #157F1F; }
     .notification--green .notification_text {
-      color: #396D38; }
+      color: #fff; }
     .notification--green .notification_iconContainer_icon {
-      color: #396D38; }
+      color: #fff; }
   .notification--red {
     background-color: #d00000;
     border: 1px solid #D00000; }

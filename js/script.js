@@ -55,8 +55,11 @@ $(document).ready(function() {
                 setTimeout(function() {
 
                     // Show confirmation message
-                    $("#contact_form_body").addClass("displayNone");
-                    $("#contact_form_confirmation").removeClass("displayNone");
+                    // $("#contact_form_body").addClass("displayNone");
+                    // $("#contact_form_confirmation").removeClass("displayNone");
+
+                    // Show success message
+                    $("#contact_success").removeClass("displayNone");
 
                     // Scroll to top of form
                     $("html, body").animate({
@@ -95,9 +98,9 @@ $(document).ready(function() {
 
     });
 
-    // Hide error message on keydown of form input
+    // Hide error/success message on keydown of form input
     $(".contactFormInput").keydown(function() {
-        $("#contact_error").addClass("displayNone");
+        $("#contact_error, #contact_success").addClass("displayNone");
     });
 
 });

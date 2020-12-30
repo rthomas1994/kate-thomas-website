@@ -3,7 +3,7 @@ $name = NULL;
 if (isset($_POST['name']) && strlen($_POST['name']) > 0 && strlen($_POST['name']) < 75) {
 	$name = $_POST['name'];
 } else {
-	throwErrorAndExit("There was a problem sending your message. Please provide a valid name.");
+	throwErrorAndExit("Please provide a valid name.");
 }
 
 $email = NULL;
@@ -11,7 +11,7 @@ $email = NULL;
 if (isset($_POST['email']) && strlen($_POST['email']) > 0 && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 	$email = $_POST['email'];
 } else {
-	throwErrorAndExit("There was a problem sending your message. Please provide a valid email.");
+	throwErrorAndExit("Please provide a valid email.");
 }
 
 $message = NULL;
@@ -19,7 +19,7 @@ $message = NULL;
 if (isset($_POST['message']) && strlen($_POST['message']) > 0 && strlen($_POST['name']) < 1000) {
 	$message = $_POST['message'];
 } else {
-	throwErrorAndExit("There was a problem sending your message. Please provide a valid message.");
+	throwErrorAndExit("Please provide a valid message.");
 }
 
 $subject = "{$name} - Filled Out Contact Form";

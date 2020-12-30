@@ -98,14 +98,15 @@ $link-blue: #1B34A7;
 	}
 
 	&--green {
-		border: 2px solid #396D38;
+		background-color: #157F1F;
+	    border: 1px solid #157F1F;
 
 		.notification_text {
-			color: #396D38;
+			color: #fff;
 		}
 
 		.notification_iconContainer_icon {
-	    	color: #396D38;
+	    	color: #fff;
 	    }
 
 	}
