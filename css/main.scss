@@ -92,7 +92,7 @@ $link-blue: #1B34A7;
 		display: block;
 
 		.notification_text {
-			padding-left: 12px;
+			padding: 12px 15px;
 		}
 
 	}
@@ -1343,6 +1343,7 @@ audio {
 
 		&--disabled {
 			background-color: #d1d1d1;
+			background-image: none;
 
 			&:hover {
 				background-color: #d1d1d1 !important;

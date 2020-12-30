@@ -19,7 +19,7 @@
   .notification--noIcon {
     display: block; }
     .notification--noIcon .notification_text {
-      padding-left: 12px; }
+      padding: 12px 15px; }
   .notification--green {
     background-color: #157F1F;
     border: 1px solid #157F1F; }
@@ -776,7 +776,8 @@ audio::-webkit-media-controls-panel {
     font-size: 20px;
     height: 19px; }
   .buttonContainer .button--disabled {
-    background-color: #d1d1d1; }
+    background-color: #d1d1d1;
+    background-image: none; }
     .buttonContainer .button--disabled:hover {
       background-color: #d1d1d1 !important;
       cursor: default !important; }

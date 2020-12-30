@@ -65,6 +65,10 @@ $(document).ready(function() {
                     $("html, body").animate({
                         scrollTop: $("#contact").offset().top - scrollOffset
                     }, 400);
+                    
+                    // Show relevant buttons
+                    $("#submit_form_spin").addClass("displayNone");
+                    $("#submit_form_check").removeClass("displayNone");
 
                 }, 500);
 
