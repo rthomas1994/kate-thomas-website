@@ -86,6 +86,11 @@ $(document).ready(function() {
 
                     // Show error message
                     $("#contact_error").removeClass("displayNone");
+
+                    // Scroll to top of form
+                    $("html, body").animate({
+                        scrollTop: $("#contact").offset().top - scrollOffset
+                    }, 400);
                     
                     // Show relevant buttons
                     $("#submit_form").removeClass("displayNone");
