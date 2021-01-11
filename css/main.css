@@ -1046,12 +1046,12 @@ audio::-webkit-media-controls-panel {
 @media only screen and (max-width: 500px) {
   .sectionHeading_h1 {
     margin-bottom: 25px;
-    font-size: 2.8em;
-    line-height: 1.3em; }
+    font-size: 3.2em;
+    line-height: 1.5em; }
   .sectionHeading_h2 {
     margin-bottom: 15px;
-    font-size: 2.2em;
-    line-height: 1.1em; }
+    font-size: 2.3em;
+    line-height: 1.5em; }
 
   .sectionContainer .section--hero .section_content .heroImagesContainer--mobile {
     max-width: 300px;
