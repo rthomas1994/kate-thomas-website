@@ -755,7 +755,7 @@ body {
 				@include grid;
 				-ms-grid-columns: 350px 1fr;
 				grid-template-columns: 350px 1fr;
-				grid-column-gap: 40px;
+				grid-column-gap: 50px;
 
 				.tagLine {
 					@include inlineFlex;
@@ -1831,7 +1831,7 @@ audio {
 	}
 
 	.sectionHeading_h1 {
-		font-size: 3em;
+		font-size: 3.4em;
 	}
 
 	.buttonContainer {

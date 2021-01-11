@@ -427,7 +427,7 @@ body {
       display: grid;
       -ms-grid-columns: 350px 1fr;
       grid-template-columns: 350px 1fr;
-      grid-column-gap: 40px; }
+      grid-column-gap: 50px; }
       .sectionContainer .section--hero .section_content .tagLine {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
@@ -1012,7 +1012,7 @@ audio::-webkit-media-controls-panel {
     grid-template-columns: 1fr; }
 
   .sectionHeading_h1 {
-    font-size: 3em; }
+    font-size: 3.4em; }
 
   .buttonContainer--inlineFlex {
     display: block; }
