@@ -753,8 +753,8 @@ body {
 			.section_content {
 				width: 90%;
 				@include grid;
-				-ms-grid-columns: 365px 1fr;
-				grid-template-columns: 365px 1fr;
+				-ms-grid-columns: 350px 1fr;
+				grid-template-columns: 350px 1fr;
 				grid-column-gap: 40px;
 
 				.tagLine {
@@ -768,16 +768,22 @@ body {
 
 					&_divider {
 						display: block;
-						margin: 0px 15px;
+						margin: 0px 25px;
 						width: 1px;
-						height: 15px;
+						height: 25px;
 						background-color: #d0d0d0;
 					}
 
 					&_h2 {
 						margin: 0px;
-						font-size: 1.2em;
-						font-weight: 600;
+						font-size: 1.4em;
+						font-weight: 400;
+
+						&_icon {
+							margin-right: 5px;
+							color: #DC0073;
+						}
+
 					}
 
 				}
@@ -804,6 +810,7 @@ body {
 					margin-left: 20px;
 
 					.buttonContainer {
+						margin-top: 25px;
 
 						&_button {
 							margin-top: 20px;
@@ -962,11 +969,11 @@ body {
 
 			&_text {
 				display: block;
-				font-size: 1.2em;
+				font-size: 1.3em;
 				line-height: 1.5em;
 
 				&--heading {
-					font-size: 1.3em;
+					font-size: 1.4em;
 					margin-bottom: 10px;
 				}
 
@@ -1038,7 +1045,7 @@ body {
 }
 
 .bulletContainer {
-	margin: auto 0px;
+	// margin: auto 0px;
 
 	.bullet {
 		width: 100%;
@@ -1079,7 +1086,7 @@ body {
 		&_heading {
 			margin: 0px;
 			margin-bottom: 3px;
-			font-size: 1.2em;
+			font-size: 1.3em;
 			line-height: 1.5em;
 			font-weight: 700;
 
@@ -1091,7 +1098,7 @@ body {
 
 		&_text {
 			margin: 0px;
-			font-size: 1.1em;
+			font-size: 1.2em;
 			line-height: 1.5em;
 			font-weight: 400;
 		}
@@ -1119,14 +1126,14 @@ body {
 	&_h1 {
 		margin: 0px;
 		margin-bottom: 20px;
-		font-size: 2.8em;
+		font-size: 3.8em;
 		line-height: 1.4em;
 	}
 
 	&_h2 {
 		margin: 0px;
 		margin-bottom: 20px;
-		font-size: 2.4em;
+		font-size: 3em;
 		line-height: 1.2em;
 	}
 	
@@ -1136,7 +1143,7 @@ body {
 	// max-width: 900px;
 	margin: 0px;
 	margin-bottom: 15px;
-	font-size: 1.2em;
+	font-size: 1.3em;
 	line-height: 1.7em;
 
 	&_ul {
@@ -1147,6 +1154,8 @@ body {
 
 .heroImagesContainer {
 	@include grid;
+	// -ms-grid-columns: 1fr;
+	// grid-template-columns: 1fr;
 	-ms-grid-columns: 45px 1fr;
 	grid-template-columns: 45px 1fr;
 	grid-column-gap: 40px;
@@ -1170,8 +1179,8 @@ body {
 .gradientDivider {
 	display: block;
 	width: 100%;
-	height: 1px;
-	margin: 15px 0px;
+	height: 2px;
+	margin: 20px 0px;
 	background: rgb(163,206,241);
     background: linear-gradient(90deg, #a3cef1 0%, #7bdff9 20%, #5feeeb 40%, #78f8c7 60%, #b3fc99 80%, #f9f871 100%);
 }
@@ -1315,7 +1324,7 @@ audio {
 		border-radius: 6px;
 		text-decoration: none !important;
 		color: #fff !important;
-		padding: 15px 25px;
+		padding: 15px 30px;
 
 		background-size: 200% 100%;
 	    background-image: linear-gradient(to right, #DC0073 50%, #2A2A72 50%);
@@ -1394,7 +1403,7 @@ audio {
 			align-items: center;
 			color: $colorWhite;
 			text-decoration: none;
-			font-size: 1.1em;
+			font-size: 1.3em;
 			@include transition(color, 0.2s);
 
 			&_icon {
@@ -1508,30 +1517,11 @@ audio {
 
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
 
 	.sectionContainer {
 
 		.section {
-
-			&--hero {
-
-				.section_content {
-					-ms-grid-columns: 335px 1fr;
-					grid-template-columns: 335px 1fr;
-					grid-gap: 30px;
-
-					.heroImagesContainer {
-						grid-column-gap: 30px;
-					}
-
-					&_textContainer {
-						margin-left: 10px;
-					}
-
-				}
-
-			}
 
 			&--training {
 
@@ -1549,7 +1539,71 @@ audio {
 
 }
 
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 1024px) {
+
+	.sectionContainer {
+
+		.section {
+
+			&--hero {
+
+				.section_content {
+					-ms-grid-columns: 300px 1fr;
+					grid-template-columns: 300px 1fr;
+					grid-gap: 30px;
+
+					.heroImagesContainer {
+						grid-column-gap: 20px;
+
+						.gradientDotContainer {
+
+							.gradientDot {
+								height: 15px;
+								width: 15px;
+							}
+
+						}
+
+					}
+
+					.textContainer {
+						margin-left: 10px;
+
+						.buttonContainer {
+							margin-top: 40px;
+						}
+
+					}
+
+					.tagLine {
+
+						&_divider {
+							margin: 0px 20px;
+						}
+
+					}
+
+				}
+
+			}
+
+			&--training {
+
+				.section_content {
+					-ms-grid-columns: 1fr 300px;
+					grid-template-columns: 1fr 300px;
+					grid-column-gap: 50px;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+@media only screen and (max-width: 900px) {
 
 	.sectionContainer {
 
@@ -1726,6 +1780,38 @@ audio {
 	.sectionContainer {
 
 		.section {
+
+			&--hero {
+
+				.section_content {
+
+					.tagLine {
+						@include inlineFlex;
+						flex-wrap: wrap;
+
+						&_h2 {
+							background-color: #fff;
+							padding: 15px;
+							border-radius: 30px;
+							border: 1px solid #f8f8f8;
+							margin-right: 12px;
+							margin-bottom: 12px;
+
+							&:last-of-type {
+								margin-right: 0px;
+							}
+
+						}
+
+						&_divider {
+							display: none;
+						}
+
+					}
+
+				}
+
+			}
 
 			&--training {
 
@@ -1941,6 +2027,35 @@ audio {
 			&_icon {
 				font-size: 20px;
 				margin-top: 3px;
+			}
+
+		}
+
+	}
+
+}
+
+@media only screen and (max-width: 350px) {
+
+	.sectionContainer {
+
+		.section {
+
+			&--hero {
+
+				.section_content {
+
+					.tagLine {
+
+						&_h2 {
+							width: 100%;
+							margin-right: 0px;
+						}
+
+					}
+
+				}
+
 			}
 
 		}
