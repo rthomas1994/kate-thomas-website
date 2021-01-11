@@ -900,6 +900,7 @@ audio::-webkit-media-controls-panel {
     grid-gap: 50px; } }
 @media only screen and (max-width: 880px) {
   .sectionContainer .section--hero {
+    background-position: initial;
     padding-top: 40px; }
     .sectionContainer .section--hero .section_content {
       -ms-grid-columns: 1fr;
@@ -1028,16 +1029,14 @@ audio::-webkit-media-controls-panel {
     font-size: 2.2em;
     line-height: 1.1em; }
 
-  .sectionContainer .section--hero {
-    background-position: initial; }
-    .sectionContainer .section--hero .section_content .heroImagesContainer--mobile {
-      max-width: 300px;
-      -ms-grid-columns: 1fr 35px;
-      grid-template-columns: 1fr 35px;
-      grid-column-gap: 20px; }
-      .sectionContainer .section--hero .section_content .heroImagesContainer--mobile .gradientDotContainer .gradientDot {
-        height: 15px;
-        width: 15px; }
+  .sectionContainer .section--hero .section_content .heroImagesContainer--mobile {
+    max-width: 300px;
+    -ms-grid-columns: 1fr 35px;
+    grid-template-columns: 1fr 35px;
+    grid-column-gap: 20px; }
+    .sectionContainer .section--hero .section_content .heroImagesContainer--mobile .gradientDotContainer .gradientDot {
+      height: 15px;
+      width: 15px; }
   .sectionContainer .section--gallery {
     padding: 50px 0px; }
 
