@@ -1029,7 +1029,8 @@ audio::-webkit-media-controls-panel {
     padding-top: 50px;
     padding-bottom: 70px; }
     .sectionContainer .section--hero {
-      padding-top: 40px; } }
+      padding-top: 40px;
+      padding-bottom: 40px; } }
 @media only screen and (max-width: 600px) {
   .sectionContainer .section--hero .section_content .tagLine {
     display: -webkit-inline-box;
