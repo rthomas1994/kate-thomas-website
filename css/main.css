@@ -999,31 +999,35 @@ audio::-webkit-media-controls-panel {
     grid-template-columns: 1fr;
     grid-gap: 20px; } }
 @media only screen and (max-width: 700px) {
-  .navContainer_content {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 45px 1fr 40px;
-    grid-template-columns: 45px 1fr 40px;
-    padding: 18px 20px;
-    padding-left: 15px; }
-    .navContainer_content .logoContainer_text {
-      height: 45px;
-      width: 45px;
-      line-height: 45px;
-      font-size: 1.6em; }
-    .navContainer_content .navSpace {
-      display: block; }
-    .navContainer_content .navItems {
-      display: none; }
-    .navContainer_content .menuContainer {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-    .navContainer_content--mobile .navItems {
-      display: block; }
-    .navContainer_content--mobile .contactIcons {
+  .navContainer {
+    background: inherit; }
+    .navContainer_content {
       display: -ms-grid;
-      display: grid; }
+      display: grid;
+      -ms-grid-columns: 45px 1fr 40px;
+      grid-template-columns: 45px 1fr 40px;
+      padding: 18px 20px;
+      padding-left: 15px;
+      background: #2a2a72;
+      background: linear-gradient(90deg, #2a2a72 0%, #320e3b 100%); }
+      .navContainer_content .logoContainer_text {
+        height: 45px;
+        width: 45px;
+        line-height: 45px;
+        font-size: 1.6em; }
+      .navContainer_content .navSpace {
+        display: block; }
+      .navContainer_content .navItems {
+        display: none; }
+      .navContainer_content .menuContainer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+      .navContainer_content--mobile .navItems {
+        display: block; }
+      .navContainer_content--mobile .contactIcons {
+        display: -ms-grid;
+        display: grid; }
 
   .pageContent {
     padding-top: 75px; }

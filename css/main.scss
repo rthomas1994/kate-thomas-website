@@ -1756,6 +1756,7 @@ audio {
 	
 	// Switch to mobile nav bar
 	.navContainer {
+		background: inherit;
 
 		&_content {
 			@include grid;
@@ -1763,6 +1764,8 @@ audio {
 			grid-template-columns: 45px 1fr 40px;
 			padding: 18px 20px;
 			padding-left: 15px;
+			background: rgb(42,42,114);
+			background: linear-gradient(90deg, rgba(42,42,114,1) 0%, rgba(50,14,59,1) 100%);
 
 			.logoContainer {
 
