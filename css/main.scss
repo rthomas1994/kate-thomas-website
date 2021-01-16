@@ -369,6 +369,86 @@ div, nav {
 }
 
 //////////////////////////////
+////////Audio Player//////////
+//////////////////////////////
+
+.demoContainer {
+	grid-column: 1 / span 2;
+	-ms-grid-column-span: 2;
+	@include grid;
+	-ms-grid-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 50px;
+	margin-top: 50px;
+
+	.demo {
+		background-color: #fff;
+		box-shadow: 0px 2px 8px #e3e3e3;
+
+		&_body {
+			padding: 15px 20px;
+			padding-bottom: 0px;
+		}
+
+		&_heading {
+			margin: 0px;
+			margin-bottom: 25px;
+			font-size: 1.8em;
+			line-height: 1.5em;
+			font-weight: 500;
+
+			&_icon {
+				margin-right: 8px;
+			}
+
+		}
+
+		.player {
+			width: 100%;
+			box-shadow: none;
+			border: 1px solid #eaeaea;
+			height: 60px;
+			margin-bottom: 25px;
+
+			.controls {
+				margin-left: 20px;
+				margin-right: 20px;
+
+				&__slider {
+					margin-left: 25px;
+					margin-right: 20px;
+				}
+
+				&__progress {
+					background-color: #8888D3 !important;
+
+					.pin {
+						background-color: #2A2A72 !important;
+					}
+
+				}
+
+			}
+
+			.download {
+				margin-left: 20px;
+			}
+
+		}
+
+		.gradientBar {
+			height: 5px;
+		}
+
+		svg {
+			color: #dc0073 !important;
+		}
+
+	}
+
+}
+
+//////////////////////////////
 ////////////Body//////////////
 //////////////////////////////
 
@@ -422,7 +502,7 @@ body {
 
 }
 
-.h1, .h2, .h3, .h4, .h5 {
+h1, h2, h3, h4, h5 {
 	@include font-bree;
 }
 
@@ -749,6 +829,7 @@ body {
 			align-items: center;
 			// justify-content: center;
 			padding: 100px 0px;
+			padding-bottom: 80px;
 
 			.section_content {
 				width: 90%;
@@ -1515,6 +1596,10 @@ audio {
 
 	}
 
+	.demo {
+		margin-right: 30px;
+	}
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1546,78 +1631,16 @@ audio {
 		.section {
 
 			&--hero {
-
-				.section_content {
-					-ms-grid-columns: 300px 1fr;
-					grid-template-columns: 300px 1fr;
-					grid-gap: 30px;
-
-					.heroImagesContainer {
-						grid-column-gap: 20px;
-
-						.gradientDotContainer {
-
-							.gradientDot {
-								height: 15px;
-								width: 15px;
-							}
-
-						}
-
-					}
-
-					.textContainer {
-						margin-left: 10px;
-
-						.buttonContainer {
-							margin-top: 40px;
-						}
-
-					}
-
-					.tagLine {
-
-						&_divider {
-							margin: 0px 20px;
-						}
-
-					}
-
-				}
-
-			}
-
-			&--training {
-
-				.section_content {
-					-ms-grid-columns: 1fr 300px;
-					grid-template-columns: 1fr 300px;
-					grid-column-gap: 50px;
-				}
-
-			}
-
-		}
-
-	}
-
-}
-
-@media only screen and (max-width: 900px) {
-
-	.sectionContainer {
-
-		.section {
-
-			&--hero {
 				background-position: initial;
 				padding-top: 40px;
+				padding-bottom: 40px;
 
 				.section_content {
 					-ms-grid-columns: 1fr;
 					grid-template-columns: 1fr;
 
 					.heroImagesContainer {
+						grid-column-gap: 20px;
 
 						&--mobile {
 							@include grid;
@@ -1631,6 +1654,14 @@ audio {
 
 					.textContainer {
 						margin-left: 0px;
+					}
+
+					.tagLine {
+
+						&_divider {
+							margin: 0px 20px;
+						}
+
 					}
 
 				}
@@ -1664,6 +1695,15 @@ audio {
 
 			&--gallery {
 				padding: 70px 0px;
+			}
+
+			&_content {
+
+				.demoContainer {
+					grid-template-columns: 1fr;
+					margin-top: 30px;
+				}
+
 			}
 
 		}

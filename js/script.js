@@ -2,6 +2,19 @@ var scrollOffset = 60;
 
 $(document).ready(function() {
 
+    // Audio player
+    GreenAudioPlayer.init({
+        selector: '.player', // inits Green Audio Player on each audio container that has class "player"
+        stopOthersOnPlay: true,
+        showDownloadButton: true
+    });
+
+    // Open download links in new tab
+    $(".download__link").attr("target", "_blank");
+
+    // Update SVG colors
+    $("svg, path").attr("fill", "#DC0073");
+
     // Scroll to relevant section from nav bar
     $(".navItem").click(function() {
 
