@@ -34,6 +34,11 @@ $(document).ready(function() {
 
     });
 
+    // Scroll to top on logo click
+    $(".logoContainer").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, 400);
+    });
+
     // Show navbar on click
     $("#show_navbar").click(function() {
         $("#mobile_nav").addClass("navContainer_content--slideDown");
