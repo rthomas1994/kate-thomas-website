@@ -388,6 +388,11 @@ div, nav {
 		&_body {
 			padding: 15px 20px;
 			padding-bottom: 0px;
+
+			.buttonContainer {
+				display: none;
+			}
+
 		}
 
 		&_heading {
@@ -1997,6 +2002,35 @@ audio {
 
 			&--gallery {
 				padding: 50px 0px;
+			}
+
+			&_content {
+
+				.demoContainer {
+					
+					.demo {
+
+						&_body {
+
+							.buttonContainer {
+								display: block;
+								margin-bottom: 25px;
+							}
+
+						}
+
+						.player {
+
+							.download {
+								display: none !important;
+							}
+
+						}
+
+					}
+
+				}
+
 			}
 
 		}

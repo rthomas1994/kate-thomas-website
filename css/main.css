@@ -189,6 +189,8 @@ div, nav {
     .demoContainer .demo_body {
       padding: 15px 20px;
       padding-bottom: 0px; }
+      .demoContainer .demo_body .buttonContainer {
+        display: none; }
     .demoContainer .demo_heading {
       margin: 0px;
       margin-bottom: 25px;
@@ -1101,6 +1103,11 @@ audio::-webkit-media-controls-panel {
       width: 15px; }
   .sectionContainer .section--gallery {
     padding: 50px 0px; }
+  .sectionContainer .section_content .demoContainer .demo_body .buttonContainer {
+    display: block;
+    margin-bottom: 25px; }
+  .sectionContainer .section_content .demoContainer .demo .player .download {
+    display: none !important; }
 
   .gallery {
     grid-gap: 10px; }
