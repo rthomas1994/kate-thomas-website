@@ -953,6 +953,10 @@ h1, h2, h3, h4, h5 {
 
 				}
 
+				.buttonContainer {
+					margin-top: 30px;
+				}
+
 			}
 
 		}
@@ -1748,6 +1752,31 @@ audio {
 		-ms-grid-columns: 1fr;
 		grid-template-columns: 1fr;
 		grid-gap: 20px;
+	}
+
+	.sectionContainer {
+
+		.section {
+
+			&--training {
+				padding-bottom: 60px;
+
+				.section_content {
+
+					.buttonContainer {
+
+						.button {
+							width: auto;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
 	}
 
 }

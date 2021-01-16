@@ -19,7 +19,7 @@ $(document).ready(function() {
     $(".navItem").click(function() {
 
         // Get clicked item
-        var clickedNavItem = $(this).attr("navsection");
+        var clickedNavItem = $(this).data("navsection");
 
         if (clickedNavItem == "about") {
             $("html, body").animate({ scrollTop: 0 }, 400);

@@ -534,6 +534,8 @@ h1, h2, h3, h4, h5 {
       grid-column: 1 / span 2; }
       .sectionContainer .section--training .section_content .sectionHeading_h2 {
         margin-bottom: 40px; }
+    .sectionContainer .section--training .section_content .buttonContainer {
+      margin-top: 30px; }
   .sectionContainer .section--gallery {
     padding: 100px 0px;
     background-position: initial; }
@@ -997,7 +999,12 @@ audio::-webkit-media-controls-panel {
   .bulletContainer {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    grid-gap: 20px; } }
+    grid-gap: 20px; }
+
+  .sectionContainer .section--training {
+    padding-bottom: 60px; }
+    .sectionContainer .section--training .section_content .buttonContainer .button {
+      width: auto; } }
 @media only screen and (max-width: 700px) {
   .navContainer {
     background: inherit; }
