@@ -201,6 +201,7 @@ div, nav {
         margin-right: 8px; }
     .demoContainer .demo .player {
       width: 100%;
+      min-width: 280px;
       box-shadow: none;
       border: 1px solid #eaeaea;
       height: 60px;
@@ -488,10 +489,9 @@ h1, h2, h3, h4, h5 {
         width: 100%; }
         .sectionContainer .section--hero .section_content .tagLine_divider {
           display: block;
-          margin: 0px 25px;
+          margin: 0px 20px;
           width: 1px;
-          height: 25px;
-          background-color: #d0d0d0; }
+          height: 25px; }
         .sectionContainer .section--hero .section_content .tagLine_h2 {
           margin: 0px;
           font-size: 1.4em;
@@ -962,6 +962,8 @@ audio::-webkit-media-controls-panel {
         margin-left: 0px; }
       .sectionContainer .section--hero .section_content .tagLine_divider {
         margin: 0px 20px; }
+      .sectionContainer .section--hero .section_content .demoContainer {
+        grid-column: 1 / span 1; }
   .sectionContainer .section--training .section_content {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -1046,22 +1048,15 @@ audio::-webkit-media-controls-panel {
       padding-top: 40px;
       padding-bottom: 40px; } }
 @media only screen and (max-width: 600px) {
-  .sectionContainer .section--hero .section_content .tagLine {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    flex-wrap: wrap; }
-    .sectionContainer .section--hero .section_content .tagLine_h2 {
-      background-color: #fff;
-      padding: 15px;
-      border-radius: 30px;
-      border: 1px solid #f8f8f8;
-      margin-right: 12px;
-      margin-bottom: 12px; }
-      .sectionContainer .section--hero .section_content .tagLine_h2:last-of-type {
-        margin-right: 0px; }
-    .sectionContainer .section--hero .section_content .tagLine_divider {
-      display: none; }
+  .sectionContainer .section--hero .section_content .tagLine_h2 {
+    font-size: 1.3em; }
+    .sectionContainer .section--hero .section_content .tagLine_h2_icon {
+      display: block;
+      margin-right: 0px;
+      margin-bottom: 5px;
+      text-align: center; }
+  .sectionContainer .section--hero .section_content .tagLine_divider {
+    margin: 0px 15px; }
   .sectionContainer .section--training .section_content .bulletContainer {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr; }

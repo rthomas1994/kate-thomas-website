@@ -410,6 +410,7 @@ div, nav {
 
 		.player {
 			width: 100%;
+			min-width: 280px;
 			box-shadow: none;
 			border: 1px solid #eaeaea;
 			height: 60px;
@@ -857,10 +858,10 @@ h1, h2, h3, h4, h5 {
 
 					&_divider {
 						display: block;
-						margin: 0px 25px;
+						margin: 0px 20px;
 						width: 1px;
 						height: 25px;
-						background-color: #d0d0d0;
+						// background-color: #d0d0d0;
 					}
 
 					&_h2 {
@@ -1676,6 +1677,10 @@ audio {
 
 					}
 
+					.demoContainer {
+						grid-column: 1 / span 1;
+					}
+
 				}
 
 			}
@@ -1867,25 +1872,21 @@ audio {
 				.section_content {
 
 					.tagLine {
-						@include inlineFlex;
-						flex-wrap: wrap;
 
 						&_h2 {
-							background-color: #fff;
-							padding: 15px;
-							border-radius: 30px;
-							border: 1px solid #f8f8f8;
-							margin-right: 12px;
-							margin-bottom: 12px;
+							font-size: 1.3em;
 
-							&:last-of-type {
+							&_icon {
+								display: block;
 								margin-right: 0px;
+								margin-bottom: 5px;
+								text-align: center;
 							}
 
 						}
 
 						&_divider {
-							display: none;
+							margin: 0px 15px;
 						}
 
 					}
