@@ -944,6 +944,9 @@ audio::-webkit-media-controls-panel {
     grid-template-columns: 1fr 350px;
     grid-column-gap: 50px; } }
 @media only screen and (max-width: 1024px) {
+  .gradientDivider {
+    height: 1px; }
+
   .sectionContainer .section--hero {
     background-position: initial;
     padding-top: 40px;
