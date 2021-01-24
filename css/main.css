@@ -286,7 +286,7 @@ h1, h2, h3, h4, h5 {
     grid-column-gap: 30px; }
 
 .pageContent {
-  padding-top: 100px; }
+  padding-top: 120px; }
 
 .skipNav {
   position: absolute;
@@ -325,26 +325,11 @@ h1, h2, h3, h4, h5 {
       display: block; }
       .navContainer_content .logoContainer_img {
         width: 100%;
-        max-width: 50px;
-        max-height: 50px;
+        max-width: 80px;
+        max-height: 80px;
         border-radius: 100%;
         display: block;
         margin: auto; }
-      .navContainer_content .logoContainer_text {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        display: block;
-        margin: auto;
-        height: 60px;
-        width: 60px;
-        border-radius: 100%;
-        color: #fff;
-        border: 2px solid #fff;
-        margin: auto;
-        font-size: 2em;
-        line-height: 60px;
-        text-align: center; }
     .navContainer_content .navItems {
       display: -webkit-inline-box;
       display: -ms-inline-flexbox;
@@ -1016,17 +1001,15 @@ audio::-webkit-media-controls-panel {
     .navContainer_content {
       display: -ms-grid;
       display: grid;
-      -ms-grid-columns: 45px 1fr 40px;
-      grid-template-columns: 45px 1fr 40px;
+      -ms-grid-columns: 65px 1fr 40px;
+      grid-template-columns: 65px 1fr 40px;
       padding: 18px 20px;
       padding-left: 15px;
       background: #2a2a72;
       background: linear-gradient(90deg, #2a2a72 0%, #320e3b 100%); }
-      .navContainer_content .logoContainer_text {
-        height: 45px;
-        width: 45px;
-        line-height: 45px;
-        font-size: 1.6em; }
+      .navContainer_content .logoContainer_img {
+        max-width: 60px;
+        max-height: 60px; }
       .navContainer_content .navSpace {
         display: block; }
       .navContainer_content .navItems {
@@ -1042,7 +1025,7 @@ audio::-webkit-media-controls-panel {
         display: grid; }
 
   .pageContent {
-    padding-top: 75px; }
+    padding-top: 90px; }
 
   .sectionContainer .section {
     padding-top: 50px;

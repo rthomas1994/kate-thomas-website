@@ -547,7 +547,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .pageContent {
-	padding-top: 100px;
+	padding-top: 120px;
 }
 
 //////////////////////////////
@@ -595,27 +595,11 @@ h1, h2, h3, h4, h5 {
 
 			&_img {
 				width: 100%;
-				max-width: 50px;
-				max-height: 50px;
+				max-width: 80px;
+				max-height: 80px;
 				border-radius: 100%;
 				display: block;
 				margin: auto;
-			}
-
-			&_text {
-				@include flex;
-				display: block;
-				margin: auto;
-				height: 60px;
-				width: 60px;
-				border-radius: 100%;
-				color: $colorWhite;
-				border: 2px solid $colorWhite;
-				margin: auto;
-				// margin-left: 15px;
-				font-size: 2em;
-				line-height: 60px;
-				text-align: center;
 			}
 
 		}
@@ -1798,8 +1782,8 @@ audio {
 
 		&_content {
 			@include grid;
-			-ms-grid-columns: 45px 1fr 40px;
-			grid-template-columns: 45px 1fr 40px;
+			-ms-grid-columns: 65px 1fr 40px;
+			grid-template-columns: 65px 1fr 40px;
 			padding: 18px 20px;
 			padding-left: 15px;
 			background: rgb(42,42,114);
@@ -1807,11 +1791,9 @@ audio {
 
 			.logoContainer {
 
-				&_text {
-					height: 45px;
-					width: 45px;
-					line-height: 45px;
-					font-size: 1.6em;
+				&_img {
+					max-width: 60px;
+					max-height: 60px;
 				}
 
 			}
@@ -1845,7 +1827,7 @@ audio {
 	}
 
 	.pageContent {
-		padding-top: 75px;
+		padding-top: 90px;
 	}
 
 	.sectionContainer {
