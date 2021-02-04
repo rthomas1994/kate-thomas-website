@@ -55,11 +55,11 @@
 		<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
 		<!-- Styles -->
-		<link rel="stylesheet" href="css/main.css?v=29">
+		<link rel="stylesheet" href="css/main.css?v=30">
 
 		<!-- Scripts -->
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
-		<script src="js/script.js?v=15"></script>
+		<script src="js/script.js?v=16"></script>
 
 		<!-- Audio player includes -->
 		<link rel="stylesheet" type="text/css" href="css/green-audio-player.min.css">
@@ -231,7 +231,6 @@
 
 							<div class="section_content_imageContainer row1col2">
 								<img class="section_content_imageContainer_img" src="media/kate-hero.png" alt="Kate professional headshot" />
-								<!-- <img class="section_content_imageContainer_img" src="/Users/Rhys/Pictures/kate-website-media/kate-hero-comp.png" /> -->
 							</div>
 
 						</div>
@@ -268,8 +267,8 @@
 							<div class="heroImagesContainer heroImagesContainer--mobile">
 
 								<div class="section_content_imageContainer row1col1">
-									<img class="section_content_imageContainer_img" src="media/kate-hero.png" alt="Kate professional headshot" />
-									<!-- <img class="section_content_imageContainer_img" src="/Users/Rhys/Pictures/kate-website-media/kate-hero-comp.png" /> -->
+									<img class="section_content_imageContainer_img" src="media/kate-hero.png" alt="Kate professional headshot" id="hero_image_desktop" />
+									<img class="section_content_imageContainer_img" style="display: none;" src="media/kate-hero-mobile.png" alt="Kate professional headshot" id="hero_image_mobile" />
 								</div>
 
 								<div class="gradientDotContainer">
@@ -306,12 +305,14 @@
 
 							</div>
 
+							<div id="demo_mobile"></div>
+
 							<p class="sectionText">
 								Kate Thomas is a <span class="boldText">professional voice over artist</span>, actress, and teacher. She is a passionate storyteller who along with her 15 years of acting experience, earned a Bachelor’s degree in Theatre Arts from Boston College.
 							</p> 
 
 							<p class="sectionText">
-								Kate has an extensive background in acting, teaching and production with experience working for companies like <span class="boldText">Stacey Mindich Productions</span> on Broadway and <span class="boldText">The Walt Disney World Company</span>. She uses her training as both an actor and educator to specialize in <span class="boldText">eLearning</span>, <span class="boldText">animation</span>, <span class="boldText">commercials</span>, <span class="boldText">video games</span>, <span class="boldText">singing</span>, and <span class="boldText">promos</span>. 
+								Kate has an extensive background in acting, teaching and production with experience working for companies like <span class="boldText">Stacey Mindich Productions</span> on Broadway and <span class="boldText">The Walt Disney World Company</span>. She uses her training as both an actor and educator to specialize in <span class="boldText">eLearning</span>, <span class="boldText">animation</span>, <span class="boldText">commercials</span>, <span class="boldText">video games</span>, <span class="boldText">singing</span>, <span class="boldText">promos</span> and more. 
 							</p>
 
 							<!-- <div class="buttonContainer buttonContainer--inlineFlex">

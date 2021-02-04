@@ -2001,22 +2001,31 @@ audio {
 					.heroImagesContainer {
 
 						&--mobile {
-							max-width: 300px;
-							-ms-grid-columns: 1fr 35px;
-							grid-template-columns: 1fr 35px;
-							grid-column-gap: 20px;
+							display: block;
+							max-width: 500px;
 
 							.gradientDotContainer {
-
-								.gradientDot {
-									height: 15px;
-									width: 15px;
-								}
-
+								display: none;
 							}
 
 						}
 
+					}
+
+					.textContainer {
+
+						.sectionHeading_h1 {
+							text-align: center;
+						}
+
+						.tagLine {
+							justify-content: center;
+						}
+
+					}
+
+					#demo_mobile {
+						margin-bottom: 30px;
 					}
 
 				}
@@ -2050,6 +2059,18 @@ audio {
 
 						}
 
+					}
+
+				}
+
+				&_imageContainer {
+
+					#hero_image_desktop {
+						display: none !important;
+					}
+
+					#hero_image_mobile {
+						display: block !important;
 					}
 
 				}

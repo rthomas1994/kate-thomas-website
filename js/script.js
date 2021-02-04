@@ -2,6 +2,12 @@ var scrollOffset = 60;
 
 $(document).ready(function() {
 
+    if ($(window).width() <= 500) {
+        // Move demos in DOM if on mobile
+        $(".demoContainer").detach().appendTo("#demo_mobile");
+    }
+
+
     // Audio player
     GreenAudioPlayer.init({
         selector: '.player', // inits Green Audio Player on each audio container that has class "player"
