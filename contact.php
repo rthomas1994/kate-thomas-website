@@ -23,14 +23,13 @@ if (isset($_POST['message']) && strlen($_POST['message']) > 0 && strlen($_POST['
 }
 
 $subject = "{$name} - Filled Out Contact Form";
-$recipient = "contact@katethomas.me";
-// $recipient = "rhysthomas1994@gmail.com";
+// $recipient = "contact@katethomas.me";
+$recipient = "rhysthomas1994@gmail.com";
 $formcontent = "<b>From:</b> {$name}";
 $formcontent .= "<br><br><b>Email:</b> {$email}";
 $formcontent .= "<br><br><b>Message:</b> {$message}";
 $headers = "From: {$name} < {$email} >\n";
 $headers .='Reply-To: '. $email . "\r\n" ;
-$headers .= "Return-Path: {$email}\r\n";
 $headers .='X-Mailer: PHP/' . phpversion();
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
