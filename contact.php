@@ -23,7 +23,8 @@ if (isset($_POST['message']) && strlen($_POST['message']) > 0 && strlen($_POST['
 }
 
 $subject = "{$name} - Filled Out Contact Form";
-$recipient = "rhysthomas1994@gmail.com";
+// $recipient = "rhysthomas1994@gmail.com";
+$recipient = "test-0projsroe@srv1.mail-tester.com";
 $formcontent = "<b>From:</b> {$name}";
 $formcontent .= "<br><br><b>Email:</b> {$email}";
 $formcontent .= "<br><br><b>Message:</b> {$message}";
