@@ -383,7 +383,7 @@ div, nav {
 
 	.demo {
 		background-color: #fff;
-		box-shadow: 0px 2px 8px #e3e3e3;
+		box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 
 		&_body {
 			padding: 15px 20px;
@@ -410,7 +410,7 @@ div, nav {
 
 		.player {
 			width: 100%;
-			min-width: 280px;
+			min-width: 250px;
 			box-shadow: none;
 			border: 1px solid #eaeaea;
 			height: 60px;
@@ -944,9 +944,56 @@ h1, h2, h3, h4, h5 {
 			background-position: initial;
 		}
 
+		&--contact {
+			// padding-bottom: 0px !important;
+		}
+
 		&_content {
 			display: block;
 			margin: auto;
+		}
+
+	}
+
+}
+
+.qualities {
+	margin-top: 100px;
+	grid-column: 1 / span 2;
+
+	.sectionHeading {
+		margin-bottom: 30px;
+	}
+
+}
+
+.qualitiesContainer {
+	@include flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	.quality {
+		@include inlineFlex;
+		align-items: center;
+		width: fit-content;
+		padding: 12px 20px;
+		border: 1px solid #e1e1e1;
+		border-radius: 30px;
+		margin-right: 12px;
+		margin-bottom: 16px;
+		background-color: #fff;
+		box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+
+		&_text {
+			font-size: 1.2em;
+			line-height: 1.2em;
+			font-weight: 600;
+
+			&_icon {
+				display: none;
+				margin-right: 5px;
+			}
+
 		}
 
 	}
@@ -993,7 +1040,8 @@ h1, h2, h3, h4, h5 {
 			width: 100%;
 			border-radius: 5px;
 			margin-bottom: 20px;
-		    box-shadow: 0px 2px 8px #dcdcdc;
+		    // box-shadow: 0px 2px 8px #dcdcdc;
+		    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
 		}
 
 	}
@@ -1124,7 +1172,8 @@ h1, h2, h3, h4, h5 {
 		background-color: #fff;
 		margin-bottom: 20px;
 		padding: 12px 20px;
-		box-shadow: 0px 2px 8px #DBE8F1;
+		// box-shadow: 0px 2px 8px #DBE8F1;
+		box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
 
 		&:last-of-type {
 			margin-bottom: 0px;
@@ -1207,6 +1256,13 @@ h1, h2, h3, h4, h5 {
 		font-size: 3em;
 		line-height: 1.2em;
 	}
+
+	&_h3 {
+		margin: 0px;
+		margin-bottom: 20px;
+		font-size: 2.4em;
+		line-height: 1.2em;
+	}
 	
 }
 
@@ -1234,7 +1290,7 @@ h1, h2, h3, h4, h5 {
 	&--mobile {
 		display: none;
 		max-width: 500px;
-		margin: 30px 0px;
+		margin: 40px 0px;
 
 		.section_content_imageContainer_img {
 			max-width: 100% !important;
@@ -1655,7 +1711,7 @@ audio {
 
 					}
 
-					.demoContainer {
+					.demoContainer, .qualities {
 						grid-column: 1 / span 1;
 					}
 
@@ -1838,6 +1894,21 @@ audio {
 }
 
 @media only screen and (max-width: 600px) {
+
+	.qualitiesContainer {
+		// display: block;
+
+		.quality {
+			// display: block;
+			// margin-right: 0px;
+
+			&_text {
+				font-size: 1.1em;
+			}
+
+		}
+
+	}
 
 	.sectionContainer {
 

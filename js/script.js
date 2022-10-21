@@ -5,6 +5,8 @@ $(document).ready(function() {
     if ($(window).width() <= 500) {
         // Move demos in DOM if on mobile
         $(".demoContainer").detach().appendTo("#demo_mobile");
+        $(".heroImagesContainer--mobile").detach().appendTo("#gif_mobile");
+        $(".heroImagesContainer--mobile").css("margin-bottom", "0px");
     }
 
 
